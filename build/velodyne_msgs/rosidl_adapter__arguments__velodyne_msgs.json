@@ -1,0 +1,7 @@
+{
+  "package_name": "velodyne_msgs",
+  "non_idl_tuples": [
+    "/home/d/velo_ws/src/velodyne-ros2/velodyne_msgs:msg/VelodynePacket.msg",
+    "/home/d/velo_ws/src/velodyne-ros2/velodyne_msgs:msg/VelodyneScan.msg"
+  ]
+}
