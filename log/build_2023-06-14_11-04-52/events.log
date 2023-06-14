@@ -1,0 +1,924 @@
+[0.000000] (-) TimerEvent: {}
+[0.000094] (cloud_msgs) JobQueued: {'identifier': 'cloud_msgs', 'dependencies': OrderedDict()}
+[0.000110] (velodyne_laserscan) JobQueued: {'identifier': 'velodyne_laserscan', 'dependencies': OrderedDict()}
+[0.000119] (velodyne_msgs) JobQueued: {'identifier': 'velodyne_msgs', 'dependencies': OrderedDict()}
+[0.000128] (lego_loam_sr) JobQueued: {'identifier': 'lego_loam_sr', 'dependencies': OrderedDict([('cloud_msgs', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs')])}
+[0.000146] (velodyne_driver) JobQueued: {'identifier': 'velodyne_driver', 'dependencies': OrderedDict([('velodyne_msgs', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs')])}
+[0.000153] (velodyne_pointcloud) JobQueued: {'identifier': 'velodyne_pointcloud', 'dependencies': OrderedDict([('velodyne_msgs', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs')])}
+[0.000162] (velodyne) JobQueued: {'identifier': 'velodyne', 'dependencies': OrderedDict([('velodyne_laserscan', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan'), ('velodyne_msgs', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs'), ('velodyne_driver', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver'), ('velodyne_pointcloud', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud')])}
+[0.000422] (velodyne_msgs) JobStarted: {'identifier': 'velodyne_msgs'}
+[0.004934] (cloud_msgs) JobStarted: {'identifier': 'cloud_msgs'}
+[0.008248] (velodyne_laserscan) JobStarted: {'identifier': 'velodyne_laserscan'}
+[0.012451] (velodyne_msgs) JobProgress: {'identifier': 'velodyne_msgs', 'progress': 'cmake'}
+[0.012800] (velodyne_msgs) JobProgress: {'identifier': 'velodyne_msgs', 'progress': 'build'}
+[0.013112] (velodyne_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.015285] (cloud_msgs) JobProgress: {'identifier': 'cloud_msgs', 'progress': 'cmake'}
+[0.015629] (cloud_msgs) JobProgress: {'identifier': 'cloud_msgs', 'progress': 'build'}
+[0.016322] (cloud_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.017757] (velodyne_laserscan) JobProgress: {'identifier': 'velodyne_laserscan', 'progress': 'cmake'}
+[0.017850] (velodyne_laserscan) JobProgress: {'identifier': 'velodyne_laserscan', 'progress': 'build'}
+[0.018048] (velodyne_laserscan) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.039559] (velodyne_msgs) StdoutLine: {'line': b'[  2%] Built target velodyne_msgs__cpp\n'}
+[0.040307] (cloud_msgs) StdoutLine: {'line': b'[  3%] Built target cloud_msgs__cpp\n'}
+[0.040559] (velodyne_msgs) StdoutLine: {'line': b'[ 12%] Built target velodyne_msgs__rosidl_generator_c\n'}
+[0.041402] (cloud_msgs) StdoutLine: {'line': b'[ 12%] Built target cloud_msgs__rosidl_generator_c\n'}
+[0.050789] (velodyne_msgs) StdoutLine: {'line': b'[ 30%] Built target velodyne_msgs__rosidl_typesupport_cpp\n'}
+[0.050992] (velodyne_msgs) StdoutLine: {'line': b'[ 33%] Built target velodyne_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.051254] (cloud_msgs) StdoutLine: {'line': b'[ 22%] Built target cloud_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.051469] (cloud_msgs) StdoutLine: {'line': b'[ 32%] Built target cloud_msgs__rosidl_typesupport_cpp\n'}
+[0.051903] (velodyne_laserscan) StdoutLine: {'line': b'[ 50%] Built target velodyne_laserscan\n'}
+[0.052349] (cloud_msgs) StdoutLine: {'line': b'[ 41%] Built target cloud_msgs__rosidl_typesupport_introspection_c\n'}
+[0.052567] (velodyne_msgs) StdoutLine: {'line': b'[ 43%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.053149] (cloud_msgs) StdoutLine: {'line': b'[ 51%] Built target cloud_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.054573] (velodyne_msgs) StdoutLine: {'line': b'[ 53%] Built target velodyne_msgs__rosidl_typesupport_c\n'}
+[0.056093] (cloud_msgs) StdoutLine: {'line': b'[ 61%] Built target cloud_msgs__rosidl_typesupport_c\n'}
+[0.056614] (velodyne_msgs) StdoutLine: {'line': b'[ 64%] Built target velodyne_msgs__rosidl_typesupport_introspection_c\n'}
+[0.065297] (velodyne_msgs) StdoutLine: {'line': b'[ 74%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.065501] (cloud_msgs) StdoutLine: {'line': b'[ 70%] Built target cloud_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.066625] (velodyne_laserscan) StdoutLine: {'line': b'[100%] Built target velodyne_laserscan_node\n'}
+[0.071924] (velodyne_laserscan) CommandEnded: {'returncode': 0}
+[0.074997] (cloud_msgs) StdoutLine: {'line': b'[ 70%] Built target cloud_msgs\n'}
+[0.075167] (velodyne_msgs) StdoutLine: {'line': b'[ 74%] Built target velodyne_msgs\n'}
+[0.083517] (velodyne_laserscan) JobProgress: {'identifier': 'velodyne_laserscan', 'progress': 'install'}
+[0.084833] (velodyne_msgs) StdoutLine: {'line': b'[ 76%] Built target velodyne_msgs__py\n'}
+[0.084965] (cloud_msgs) StdoutLine: {'line': b'[ 74%] Built target cloud_msgs__py\n'}
+[0.088627] (velodyne_laserscan) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.093480] (velodyne_laserscan) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.093750] (velodyne_laserscan) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.094001] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so\n'}
+[0.094196] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/velodyne_laserscan/velodyne_laserscan_node\n'}
+[0.094428] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/include/velodyne_laserscan/velodyne_laserscan.hpp\n'}
+[0.094643] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/config/default-velodyne_laserscan_node-params.yaml\n'}
+[0.094790] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-composed-launch.py\n'}
+[0.094866] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-launch.py\n'}
+[0.094992] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/ament_index/resource_index/package_run_dependencies/velodyne_laserscan\n'}
+[0.095116] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/ament_index/resource_index/parent_prefix_path/velodyne_laserscan\n'}
+[0.095247] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.sh\n'}
+[0.095357] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.dsv\n'}
+[0.095468] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.sh\n'}
+[0.095576] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.dsv\n'}
+[0.095680] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.bash\n'}
+[0.095785] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.sh\n'}
+[0.095892] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.zsh\n'}
+[0.095999] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.dsv\n'}
+[0.096089] (velodyne_laserscan) StdoutLine: {'line': b'-- Symlinking: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv\n'}
+[0.097244] (cloud_msgs) StdoutLine: {'line': b'[ 80%] Built target cloud_msgs__python\n'}
+[0.097418] (velodyne_msgs) StdoutLine: {'line': b'[ 84%] Built target velodyne_msgs__python\n'}
+[0.099859] (-) TimerEvent: {}
+[0.100671] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/ament_index/resource_index/packages/velodyne_laserscan\n'}
+[0.100878] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/ament_index/resource_index/rclcpp_components/velodyne_laserscan\n'}
+[0.101105] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig.cmake\n'}
+[0.101244] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig-version.cmake\n'}
+[0.101456] (velodyne_laserscan) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.xml\n'}
+[0.103097] (velodyne_laserscan) CommandEnded: {'returncode': 0}
+[0.111059] (velodyne_msgs) StdoutLine: {'line': b'[ 97%] Built target velodyne_msgs__rosidl_typesupport_c__pyext\n'}
+[0.111265] (velodyne_msgs) StdoutLine: {'line': b'[100%] Built target velodyne_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.111419] (cloud_msgs) StdoutLine: {'line': b'[ 96%] Built target cloud_msgs__rosidl_typesupport_c__pyext\n'}
+[0.111474] (cloud_msgs) StdoutLine: {'line': b'[100%] Built target cloud_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.111506] (cloud_msgs) StdoutLine: {'line': b'[100%] Built target cloud_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.111534] (velodyne_msgs) StdoutLine: {'line': b'[100%] Built target velodyne_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.116796] (velodyne_msgs) CommandEnded: {'returncode': 0}
+[0.118410] (cloud_msgs) CommandEnded: {'returncode': 0}
+[0.130344] (velodyne_laserscan) JobEnded: {'identifier': 'velodyne_laserscan', 'rc': 0}
+[0.138624] (cloud_msgs) JobProgress: {'identifier': 'cloud_msgs', 'progress': 'install'}
+[0.138772] (cloud_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.142658] (velodyne_msgs) JobProgress: {'identifier': 'velodyne_msgs', 'progress': 'install'}
+[0.142912] (velodyne_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.144204] (cloud_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.144268] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/ament_index/resource_index/rosidl_interfaces/cloud_msgs\n'}
+[0.144318] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.144408] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.144442] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.144470] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/cloud_info.h\n'}
+[0.144496] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.144521] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__type_support.h\n'}
+[0.144547] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__struct.h\n'}
+[0.144572] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__functions.h\n'}
+[0.144598] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__functions.c\n'}
+[0.144622] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/library_path.sh\n'}
+[0.144660] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/library_path.dsv\n'}
+[0.144707] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_generator_c.so\n'}
+[0.144734] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.144759] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.144784] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.144809] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.144835] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.144881] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.144907] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.144932] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.144965] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.144989] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.145013] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.145056] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/dds_fastrtps\n'}
+[0.145084] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.145110] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.145145] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.145192] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.145220] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.145245] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__type_support.c\n'}
+[0.145269] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__rosidl_typesupport_introspection_c.h\n'}
+[0.145292] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.145330] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_c.so\n'}
+[0.145405] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.145442] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.145492] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/cloud_info.hpp\n'}
+[0.145519] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.145545] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__builder.hpp\n'}
+[0.145570] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__struct.hpp\n'}
+[0.145594] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__traits.hpp\n'}
+[0.145619] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs\n'}
+[0.145644] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg\n'}
+[0.145684] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail\n'}
+[0.145707] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__type_support.cpp\n'}
+[0.145731] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/include/cloud_msgs/msg/detail/cloud_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.145754] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.145791] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__rosidl_typesupport_cpp.so\n'}
+[0.145838] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/pythonpath.sh\n'}
+[0.145874] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/pythonpath.dsv\n'}
+[0.145911] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/__init__.py\n'}
+[0.147394] (velodyne_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.147778] (velodyne_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.147945] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/ament_index/resource_index/rosidl_interfaces/velodyne_msgs\n'}
+[0.148256] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__functions.h\n'}
+[0.148327] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__struct.h\n'}
+[0.148394] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__type_support.h\n'}
+[0.148460] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__functions.h\n'}
+[0.148522] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__struct.h\n'}
+[0.148586] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__type_support.h\n'}
+[0.148647] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.148709] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_packet.h\n'}
+[0.148769] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_scan.h\n'}
+[0.148900] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.sh\n'}
+[0.149015] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/library_path.dsv\n'}
+[0.149294] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[0.149364] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[0.149427] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.149632] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.149910] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.149976] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.150039] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.150240] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.150476] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_c.h\n'}
+[0.150547] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_c.h\n'}
+[0.150607] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.150850] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp\n'}
+[0.150915] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp\n'}
+[0.150979] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp\n'}
+[0.151042] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp\n'}
+[0.151103] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp\n'}
+[0.151165] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp\n'}
+[0.151298] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_packet.hpp\n'}
+[0.151360] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/velodyne_scan.hpp\n'}
+[0.151589] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.151657] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/include/velodyne_msgs/msg/detail/velodyne_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.151778] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.sh\n'}
+[0.151891] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/pythonpath.dsv\n'}
+[0.152006] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/__init__.py\n'}
+[0.152220] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/__init__.py\n'}
+[0.152282] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_packet.py\n'}
+[0.152345] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/msg/_velodyne_scan.py\n'}
+[0.152554] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.152748] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.152933] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages/velodyne_msgs/velodyne_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.153117] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__python.so\n'}
+[0.153238] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.idl\n'}
+[0.153350] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.idl\n'}
+[0.153459] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodynePacket.msg\n'}
+[0.153570] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/msg/VelodyneScan.msg\n'}
+[0.153687] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/ament_index/resource_index/package_run_dependencies/velodyne_msgs\n'}
+[0.153800] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/ament_index/resource_index/parent_prefix_path/velodyne_msgs\n'}
+[0.153911] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.sh\n'}
+[0.154017] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/ament_prefix_path.dsv\n'}
+[0.154123] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/path.sh\n'}
+[0.154227] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/environment/path.dsv\n'}
+[0.154330] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.bash\n'}
+[0.154431] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.sh\n'}
+[0.154532] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.zsh\n'}
+[0.154631] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/local_setup.dsv\n'}
+[0.154714] (velodyne_msgs) StdoutLine: {'line': b'-- Symlinking: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv\n'}
+[0.159139] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/ament_index/resource_index/packages/velodyne_msgs\n'}
+[0.159282] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.159409] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.159519] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.159626] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.159740] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.159790] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.159895] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.160006] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig.cmake\n'}
+[0.160075] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgsConfig-version.cmake\n'}
+[0.160180] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.xml\n'}
+[0.160315] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_generator_c.so\n'}
+[0.160501] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.160648] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_c.so\n'}
+[0.160797] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.160945] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/libvelodyne_msgs__rosidl_typesupport_cpp.so\n'}
+[0.163170] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/msg\n'}
+[0.163223] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/msg/_cloud_info_s.c\n'}
+[0.163249] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/msg/_cloud_info.py\n'}
+[0.163273] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/msg/__init__.py\n'}
+[0.163572] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/cloud_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.163908] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/cloud_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.164223] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages/cloud_msgs/cloud_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.164425] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/libcloud_msgs__python.so\n'}
+[0.164512] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/msg/CloudInfo.idl\n'}
+[0.164549] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/msg/CloudInfo.msg\n'}
+[0.164583] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/ament_index/resource_index/package_run_dependencies/cloud_msgs\n'}
+[0.164619] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/ament_index/resource_index/parent_prefix_path/cloud_msgs\n'}
+[0.164656] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/ament_prefix_path.sh\n'}
+[0.164694] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/ament_prefix_path.dsv\n'}
+[0.164744] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/path.sh\n'}
+[0.164772] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/environment/path.dsv\n'}
+[0.164798] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/local_setup.bash\n'}
+[0.164824] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/local_setup.sh\n'}
+[0.164850] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/local_setup.zsh\n'}
+[0.164887] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/local_setup.dsv\n'}
+[0.164929] (cloud_msgs) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.dsv\n'}
+[0.164956] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/ament_index/resource_index/packages/cloud_msgs\n'}
+[0.164993] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_generator_cExport.cmake\n'}
+[0.165031] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.165070] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.165108] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.165141] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.165177] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.165225] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.165302] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.165336] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.165391] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.165432] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.165459] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.165495] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.165540] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.165567] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.165593] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.165618] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.165655] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.165696] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgsConfig.cmake\n'}
+[0.165723] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake/cloud_msgsConfig-version.cmake\n'}
+[0.165750] (cloud_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.xml\n'}
+[0.167706] (cloud_msgs) CommandEnded: {'returncode': 0}
+[0.178867] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cExport.cmake\n'}
+[0.179002] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.179041] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.179068] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.179095] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.179137] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.179166] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.179202] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.179240] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.179290] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.179329] (velodyne_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake/velodyne_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.180460] (velodyne_msgs) CommandEnded: {'returncode': 0}
+[0.199967] (-) TimerEvent: {}
+[0.203609] (cloud_msgs) JobEnded: {'identifier': 'cloud_msgs', 'rc': 0}
+[0.205156] (lego_loam_sr) JobStarted: {'identifier': 'lego_loam_sr'}
+[0.208662] (lego_loam_sr) JobProgress: {'identifier': 'lego_loam_sr', 'progress': 'cmake'}
+[0.209060] (lego_loam_sr) Command: {'cmd': ['/usr/bin/cmake', '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM', '-DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.217632] (lego_loam_sr) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.221454] (velodyne_msgs) JobEnded: {'identifier': 'velodyne_msgs', 'rc': 0}
+[0.222848] (velodyne_driver) JobStarted: {'identifier': 'velodyne_driver'}
+[0.224862] (velodyne_pointcloud) JobStarted: {'identifier': 'velodyne_pointcloud'}
+[0.228926] (velodyne_driver) JobProgress: {'identifier': 'velodyne_driver', 'progress': 'cmake'}
+[0.229299] (velodyne_driver) JobProgress: {'identifier': 'velodyne_driver', 'progress': 'build'}
+[0.229596] (velodyne_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.232110] (lego_loam_sr) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.232419] (velodyne_pointcloud) JobProgress: {'identifier': 'velodyne_pointcloud', 'progress': 'cmake'}
+[0.232563] (velodyne_pointcloud) JobProgress: {'identifier': 'velodyne_pointcloud', 'progress': 'build'}
+[0.232821] (velodyne_pointcloud) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.255856] (velodyne_driver) StdoutLine: {'line': b'[ 16%] Built target gtest_main\n'}
+[0.256052] (velodyne_driver) StdoutLine: {'line': b'[ 33%] Built target gtest\n'}
+[0.259780] (velodyne_pointcloud) StdoutLine: {'line': b'[ 11%] Built target gtest\n'}
+[0.260834] (velodyne_driver) StdoutLine: {'line': b'[ 50%] Built target velodyne_input\n'}
+[0.261733] (velodyne_pointcloud) StdoutLine: {'line': b'[ 22%] Built target gtest_main\n'}
+[0.268064] (velodyne_pointcloud) StdoutLine: {'line': b'[ 38%] Built target velodyne_rawdata\n'}
+[0.268760] (velodyne_pointcloud) StdoutLine: {'line': b'[ 55%] Built target velodyne_cloud_types\n'}
+[0.276033] (velodyne_driver) StdoutLine: {'line': b'[ 66%] Built target time_test\n'}
+[0.276981] (velodyne_driver) StdoutLine: {'line': b'[ 83%] Built target velodyne_driver\n'}
+[0.279836] (velodyne_pointcloud) StdoutLine: {'line': b'[ 66%] Built target test_row_step\n'}
+[0.280485] (velodyne_pointcloud) StdoutLine: {'line': b'[ 77%] Built target test_calibration\n'}
+[0.287619] (velodyne_pointcloud) StdoutLine: {'line': b'[ 88%] Built target transform\n'}
+[0.292164] (velodyne_driver) StdoutLine: {'line': b'[100%] Built target velodyne_driver_node\n'}
+[0.297570] (velodyne_driver) CommandEnded: {'returncode': 0}
+[0.300070] (-) TimerEvent: {}
+[0.306328] (velodyne_pointcloud) StdoutLine: {'line': b'[100%] Built target velodyne_transform_node\n'}
+[0.311992] (velodyne_driver) JobProgress: {'identifier': 'velodyne_driver', 'progress': 'install'}
+[0.312341] (velodyne_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.314770] (velodyne_pointcloud) CommandEnded: {'returncode': 0}
+[0.318134] (lego_loam_sr) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.318337] (velodyne_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.318497] (velodyne_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.318730] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/libvelodyne_input.so\n'}
+[0.318941] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/libvelodyne_driver.so\n'}
+[0.319140] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/velodyne_driver/velodyne_driver_node\n'}
+[0.319404] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/include/velodyne_driver/driver.hpp\n'}
+[0.319468] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/include/velodyne_driver/input.hpp\n'}
+[0.319533] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/include/velodyne_driver/time_conversion.hpp\n'}
+[0.319755] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/config/VLP16-velodyne_driver_node-params.yaml\n'}
+[0.319819] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/config/VLP32C-velodyne_driver_node-params.yaml\n'}
+[0.319974] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-composed-launch.py\n'}
+[0.320036] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-launch.py\n'}
+[0.320099] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-composed-launch.py\n'}
+[0.320160] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-launch.py\n'}
+[0.320287] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/velodyne_driver/vdump\n'}
+[0.320413] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/ament_index/resource_index/package_run_dependencies/velodyne_driver\n'}
+[0.320564] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/ament_index/resource_index/parent_prefix_path/velodyne_driver\n'}
+[0.320710] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.sh\n'}
+[0.320811] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.dsv\n'}
+[0.320903] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/environment/path.sh\n'}
+[0.320994] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/environment/path.dsv\n'}
+[0.321099] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/local_setup.bash\n'}
+[0.321202] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/local_setup.sh\n'}
+[0.321305] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/local_setup.zsh\n'}
+[0.321408] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/local_setup.dsv\n'}
+[0.321559] (velodyne_driver) StdoutLine: {'line': b'-- Symlinking: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.dsv\n'}
+[0.326024] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/ament_index/resource_index/packages/velodyne_driver\n'}
+[0.326188] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/ament_index/resource_index/rclcpp_components/velodyne_driver\n'}
+[0.326277] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig.cmake\n'}
+[0.326355] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig-version.cmake\n'}
+[0.326487] (velodyne_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.xml\n'}
+[0.327664] (velodyne_driver) CommandEnded: {'returncode': 0}
+[0.335943] (velodyne_pointcloud) JobProgress: {'identifier': 'velodyne_pointcloud', 'progress': 'install'}
+[0.336268] (velodyne_pointcloud) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy')]), 'shell': False}
+[0.337590] (lego_loam_sr) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.338252] (lego_loam_sr) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.340845] (velodyne_pointcloud) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.341151] (velodyne_pointcloud) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.341409] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so\n'}
+[0.341540] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so\n'}
+[0.341733] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/libtransform.so\n'}
+[0.341950] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/velodyne_pointcloud/velodyne_transform_node\n'}
+[0.342198] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/calibration.hpp\n'}
+[0.342277] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/datacontainerbase.hpp\n'}
+[0.342357] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/organized_cloudXYZIRT.hpp\n'}
+[0.342447] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/pointcloudXYZIRT.hpp\n'}
+[0.342523] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/rawdata.hpp\n'}
+[0.342621] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/transform.hpp\n'}
+[0.342747] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP16-velodyne_transform_node-params.yaml\n'}
+[0.342835] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP32C-velodyne_transform_node-params.yaml\n'}
+[0.342981] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-composed-launch.py\n'}
+[0.343079] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-launch.py\n'}
+[0.343162] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-composed-launch.py\n'}
+[0.343294] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-launch.py\n'}
+[0.343365] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/32db.yaml\n'}
+[0.343416] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s2.1-sztaki.yaml\n'}
+[0.343480] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s3-xiesc.yaml\n'}
+[0.343523] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_utexas.yaml\n'}
+[0.343584] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16_hires_db.yaml\n'}
+[0.343644] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16db.yaml\n'}
+[0.343703] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml\n'}
+[0.343762] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/issue_84_float_intensities.yaml\n'}
+[0.343823] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/rviz_points.vcg\n'}
+[0.343960] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/ament_index/resource_index/package_run_dependencies/velodyne_pointcloud\n'}
+[0.344082] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/ament_index/resource_index/parent_prefix_path/velodyne_pointcloud\n'}
+[0.344202] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.sh\n'}
+[0.344340] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.dsv\n'}
+[0.344431] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.sh\n'}
+[0.344542] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.dsv\n'}
+[0.344653] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.bash\n'}
+[0.344756] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.sh\n'}
+[0.344863] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.zsh\n'}
+[0.344972] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.dsv\n'}
+[0.345062] (velodyne_pointcloud) StdoutLine: {'line': b'-- Symlinking: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv\n'}
+[0.349681] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/ament_index/resource_index/packages/velodyne_pointcloud\n'}
+[0.349793] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/ament_index/resource_index/rclcpp_components/velodyne_pointcloud\n'}
+[0.349872] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig.cmake\n'}
+[0.349923] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig-version.cmake\n'}
+[0.350044] (velodyne_pointcloud) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.xml\n'}
+[0.354969] (velodyne_driver) JobEnded: {'identifier': 'velodyne_driver', 'rc': 0}
+[0.355484] (velodyne_pointcloud) CommandEnded: {'returncode': 0}
+[0.381164] (velodyne_pointcloud) JobEnded: {'identifier': 'velodyne_pointcloud', 'rc': 0}
+[0.382719] (velodyne) JobStarted: {'identifier': 'velodyne'}
+[0.387764] (velodyne) JobProgress: {'identifier': 'velodyne', 'progress': 'cmake'}
+[0.388084] (velodyne) JobProgress: {'identifier': 'velodyne', 'progress': 'build'}
+[0.388188] (velodyne) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy')]), 'shell': False}
+[0.400144] (-) TimerEvent: {}
+[0.403986] (lego_loam_sr) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.408127] (velodyne) CommandEnded: {'returncode': 0}
+[0.417522] (velodyne) JobProgress: {'identifier': 'velodyne', 'progress': 'install'}
+[0.417661] (velodyne) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy')]), 'shell': False}
+[0.422906] (velodyne) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.423001] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch\n'}
+[0.423067] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-composed-launch.py\n'}
+[0.423100] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-launch.py\n'}
+[0.423128] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-launch.py\n'}
+[0.423155] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-composed-launch.py\n'}
+[0.423320] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/ament_index/resource_index/package_run_dependencies/velodyne\n'}
+[0.423353] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/ament_index/resource_index/parent_prefix_path/velodyne\n'}
+[0.423379] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/environment/ament_prefix_path.sh\n'}
+[0.423407] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/environment/ament_prefix_path.dsv\n'}
+[0.423435] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/environment/path.sh\n'}
+[0.423495] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/environment/path.dsv\n'}
+[0.423546] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/local_setup.bash\n'}
+[0.423575] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/local_setup.sh\n'}
+[0.423601] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/local_setup.zsh\n'}
+[0.423626] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/local_setup.dsv\n'}
+[0.423649] (velodyne) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.dsv\n'}
+[0.423672] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/ament_index/resource_index/packages/velodyne\n'}
+[0.423697] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/cmake/velodyneConfig.cmake\n'}
+[0.423720] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/cmake/velodyneConfig-version.cmake\n'}
+[0.423744] (velodyne) StdoutLine: {'line': b'-- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.xml\n'}
+[0.424165] (velodyne) CommandEnded: {'returncode': 0}
+[0.430808] (lego_loam_sr) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.431430] (lego_loam_sr) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.444482] (velodyne) JobEnded: {'identifier': 'velodyne', 'rc': 0}
+[0.500280] (-) TimerEvent: {}
+[0.509088] (lego_loam_sr) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.569550] (lego_loam_sr) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[0.600382] (-) TimerEvent: {}
+[0.606928] (lego_loam_sr) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[0.611716] (lego_loam_sr) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[0.700506] (-) TimerEvent: {}
+[0.776000] (lego_loam_sr) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)\n'}
+[0.779078] (lego_loam_sr) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)\n'}
+[0.792479] (lego_loam_sr) StdoutLine: {'line': b'-- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)\n'}
+[0.800605] (-) TimerEvent: {}
+[0.879431] (lego_loam_sr) StdoutLine: {'line': b'-- Found cloud_msgs: 1.0.0 (/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake)\n'}
+[0.900743] (-) TimerEvent: {}
+[0.903373] (lego_loam_sr) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[0.947376] (lego_loam_sr) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[0.947495] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[0.947528] (lego_loam_sr) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[0.947554] (lego_loam_sr) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[0.947579] (lego_loam_sr) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[0.947605] (lego_loam_sr) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[0.947629] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[0.947653] (lego_loam_sr) StdoutLine: {'line': b'but not all the files it references.\n'}
+[0.947676] (lego_loam_sr) StdoutLine: {'line': b'\n'}
+[0.947952] (lego_loam_sr) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[0.948015] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[0.948051] (lego_loam_sr) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[0.948077] (lego_loam_sr) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[0.948101] (lego_loam_sr) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[0.948124] (lego_loam_sr) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[0.948149] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[0.948174] (lego_loam_sr) StdoutLine: {'line': b'but not all the files it references.\n'}
+[0.948199] (lego_loam_sr) StdoutLine: {'line': b'\n'}
+[0.948347] (lego_loam_sr) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[0.948411] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[0.948444] (lego_loam_sr) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[0.948470] (lego_loam_sr) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[0.948498] (lego_loam_sr) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[0.948524] (lego_loam_sr) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[0.948548] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[0.948574] (lego_loam_sr) StdoutLine: {'line': b'but not all the files it references.\n'}
+[0.948599] (lego_loam_sr) StdoutLine: {'line': b'\n'}
+[0.948715] (lego_loam_sr) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[0.948778] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[0.948808] (lego_loam_sr) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[0.948835] (lego_loam_sr) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[0.948860] (lego_loam_sr) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[0.948884] (lego_loam_sr) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[0.948908] (lego_loam_sr) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[0.948932] (lego_loam_sr) StdoutLine: {'line': b'but not all the files it references.\n'}
+[0.948955] (lego_loam_sr) StdoutLine: {'line': b'\n'}
+[0.959327] (lego_loam_sr) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[0.962847] (lego_loam_sr) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[0.963011] (lego_loam_sr) StderrLine: {'line': b'** WARNING ** io features related to pcap will be disabled\n'}
+[0.963087] (lego_loam_sr) StderrLine: {'line': b'** WARNING ** io features related to png will be disabled\n'}
+[0.969315] (lego_loam_sr) StderrLine: {'line': b'** WARNING ** io features related to libusb-1.0 will be disabled\n'}
+[0.972793] (lego_loam_sr) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[0.976177] (lego_loam_sr) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[0.982997] (lego_loam_sr) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)\n'}
+[0.986452] (lego_loam_sr) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[0.992738] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[0.993085] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[0.993380] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[0.993661] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[0.993929] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[0.994172] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[0.994505] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[0.994614] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[0.994813] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[0.995127] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[0.995447] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[0.995724] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[0.996080] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[0.996421] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[0.996729] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[0.997063] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[0.997388] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[0.997695] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[0.998077] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[0.998368] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[0.998947] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[0.999175] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[0.999398] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[0.999729] (lego_loam_sr) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.000795] (-) TimerEvent: {}
+[1.001729] (lego_loam_sr) StdoutLine: {'line': b'-- GTSAM include directory:  /usr/local/lib/cmake/GTSAM/../../../include;/usr/include;/usr/local/include/gtsam/3rdparty/Eigen/\n'}
+[1.020521] (lego_loam_sr) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.71.0") found components: thread serialization timer chrono date_time atomic \n'}
+[1.073873] (lego_loam_sr) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.100912] (-) TimerEvent: {}
+[1.107971] (lego_loam_sr) StdoutLine: {'line': b'-- Generating done\n'}
+[1.108961] (lego_loam_sr) StdoutLine: {'line': b'-- Build files have been written to: /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr\n'}
+[1.115079] (lego_loam_sr) CommandEnded: {'returncode': 0}
+[1.116760] (lego_loam_sr) JobProgress: {'identifier': 'lego_loam_sr', 'progress': 'build'}
+[1.116785] (lego_loam_sr) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr', '--', '-j20', '-l20'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy')]), 'shell': False}
+[1.142884] (lego_loam_sr) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lego_loam_sr\x1b[0m\n'}
+[1.201028] (-) TimerEvent: {}
+[1.235370] (lego_loam_sr) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/imageProjection.cpp.o\x1b[0m\n'}
+[1.235679] (lego_loam_sr) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/featureAssociation.cpp.o\x1b[0m\n'}
+[1.235771] (lego_loam_sr) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/mapOptmization.cpp.o\x1b[0m\n'}
+[1.236107] (lego_loam_sr) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/transformFusion.cpp.o\x1b[0m\n'}
+[1.236443] (lego_loam_sr) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/main.cpp.o\x1b[0m\n'}
+[1.301141] (-) TimerEvent: {}
+[1.401414] (-) TimerEvent: {}
+[1.501673] (-) TimerEvent: {}
+[1.601932] (-) TimerEvent: {}
+[1.702239] (-) TimerEvent: {}
+[1.802507] (-) TimerEvent: {}
+[1.902748] (-) TimerEvent: {}
+[2.003011] (-) TimerEvent: {}
+[2.103290] (-) TimerEvent: {}
+[2.203540] (-) TimerEvent: {}
+[2.303760] (-) TimerEvent: {}
+[2.404024] (-) TimerEvent: {}
+[2.504283] (-) TimerEvent: {}
+[2.604545] (-) TimerEvent: {}
+[2.704807] (-) TimerEvent: {}
+[2.805069] (-) TimerEvent: {}
+[2.905291] (-) TimerEvent: {}
+[3.005547] (-) TimerEvent: {}
+[3.105769] (-) TimerEvent: {}
+[3.206030] (-) TimerEvent: {}
+[3.306288] (-) TimerEvent: {}
+[3.406558] (-) TimerEvent: {}
+[3.506826] (-) TimerEvent: {}
+[3.607096] (-) TimerEvent: {}
+[3.707394] (-) TimerEvent: {}
+[3.807659] (-) TimerEvent: {}
+[3.907987] (-) TimerEvent: {}
+[4.008316] (-) TimerEvent: {}
+[4.108648] (-) TimerEvent: {}
+[4.208983] (-) TimerEvent: {}
+[4.309313] (-) TimerEvent: {}
+[4.409645] (-) TimerEvent: {}
+[4.509978] (-) TimerEvent: {}
+[4.566210] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual FeatureAssociation::~FeatureAssociation()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.566387] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:110:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting to \xe2\x80\x98\x1b[01m\x1b[Kcloud_msgs::msg::CloudInfo\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcloud_msgs::msg::CloudInfo_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} from initializer list would use explicit constructor \xe2\x80\x98\x1b[01m\x1b[Kcloud_msgs::msg::CloudInfo_<ContainerAllocator>::CloudInfo_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.566469] (lego_loam_sr) StderrLine: {'line': b'  110 |   _input_channel.send({}\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.566531] (lego_loam_sr) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.566593] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:110:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin C++11 and above a default constructor can be explicit\n'}
+[4.610078] (-) TimerEvent: {}
+[4.693677] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/gtsam/base/types.h:31\x1b[m\x1b[K,\n'}
+[4.693847] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/global_includes.h:22\x1b[m\x1b[K,\n'}
+[4.693911] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Vector.h:27\x1b[m\x1b[K,\n'}
+[4.693971] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Matrix.h:26\x1b[m\x1b[K,\n'}
+[4.694028] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Manifold.h:22\x1b[m\x1b[K,\n'}
+[4.694084] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/BearingRange.h:21\x1b[m\x1b[K,\n'}
+[4.694139] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Pose3.h:22\x1b[m\x1b[K,\n'}
+[4.694195] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8\x1b[m\x1b[K,\n'}
+[4.694250] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:37\x1b[m\x1b[K:\n'}
+[4.694305] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/tbb/task_scheduler_init.h:21:154:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.\n'}
+[4.694373] (lego_loam_sr) StderrLine: {'line': b'   21 | #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[4.694428] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                                                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.710245] (-) TimerEvent: {}
+[4.722703] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/gtsam/base/types.h:31\x1b[m\x1b[K,\n'}
+[4.722872] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/global_includes.h:22\x1b[m\x1b[K,\n'}
+[4.722936] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Vector.h:27\x1b[m\x1b[K,\n'}
+[4.722996] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Matrix.h:26\x1b[m\x1b[K,\n'}
+[4.723054] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/base/Manifold.h:22\x1b[m\x1b[K,\n'}
+[4.723111] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/BearingRange.h:21\x1b[m\x1b[K,\n'}
+[4.723168] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Pose3.h:22\x1b[m\x1b[K,\n'}
+[4.723232] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8\x1b[m\x1b[K,\n'}
+[4.723300] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:4\x1b[m\x1b[K:\n'}
+[4.723356] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/tbb/task_scheduler_init.h:21:154:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.\n'}
+[4.723414] (lego_loam_sr) StderrLine: {'line': b'   21 | #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[4.723470] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                                                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.810402] (-) TimerEvent: {}
+[4.910735] (-) TimerEvent: {}
+[5.011067] (-) TimerEvent: {}
+[5.111334] (-) TimerEvent: {}
+[5.211610] (-) TimerEvent: {}
+[5.223709] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Unit3.h:36\x1b[m\x1b[K,\n'}
+[5.223882] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Rot3.h:25\x1b[m\x1b[K,\n'}
+[5.223958] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Pose3.h:24\x1b[m\x1b[K,\n'}
+[5.224019] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8\x1b[m\x1b[K,\n'}
+[5.224080] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:37\x1b[m\x1b[K:\n'}
+[5.224138] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/tbb/mutex.h:21:140:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K#pragma message: TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.\n'}
+[5.224195] (lego_loam_sr) StderrLine: {'line': b'   21 | #pragma message("TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[5.224254] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.252891] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Unit3.h:36\x1b[m\x1b[K,\n'}
+[5.253066] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Rot3.h:25\x1b[m\x1b[K,\n'}
+[5.253130] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/gtsam/geometry/Pose3.h:24\x1b[m\x1b[K,\n'}
+[5.253190] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8\x1b[m\x1b[K,\n'}
+[5.253249] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:4\x1b[m\x1b[K:\n'}
+[5.253305] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/tbb/mutex.h:21:140:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K#pragma message: TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.\n'}
+[5.253363] (lego_loam_sr) StderrLine: {'line': b'   21 | #pragma message("TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[5.253420] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.311771] (-) TimerEvent: {}
+[5.412110] (-) TimerEvent: {}
+[5.512380] (-) TimerEvent: {}
+[5.612717] (-) TimerEvent: {}
+[5.713052] (-) TimerEvent: {}
+[5.813386] (-) TimerEvent: {}
+[5.913726] (-) TimerEvent: {}
+[6.002446] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual MapOptimization::~MapOptimization()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.002618] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:128:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting to \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Odometry\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Odometry_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} from initializer list would use explicit constructor \xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::Odometry_<ContainerAllocator>::Odometry_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.002688] (lego_loam_sr) StderrLine: {'line': b'  128 |   _input_channel.send({}\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.002748] (lego_loam_sr) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.002805] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:128:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin C++11 and above a default constructor can be explicit\n'}
+[6.013882] (-) TimerEvent: {}
+[6.023997] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.024137] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use rclcpp::ExecutorOptions() instead [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[6.024185] (lego_loam_sr) StderrLine: {'line': b'   25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::\x1b[01;35m\x1b[Kcreate_default_executor_arguments\x1b[m\x1b[K(), 4);\n'}
+[6.024214] (lego_loam_sr) StderrLine: {'line': b'      |                                                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.024239] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[6.024265] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.024291] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.024314] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.024339] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[6.024362] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.024385] (lego_loam_sr) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kcreate_default_executor_arguments\x1b[m\x1b[K()\n'}
+[6.024407] (lego_loam_sr) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.024429] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use rclcpp::ExecutorOptions() instead [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[6.024454] (lego_loam_sr) StderrLine: {'line': b'   25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::create_default_executor_arguments(\x1b[01;35m\x1b[K)\x1b[m\x1b[K, 4);\n'}
+[6.024477] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.024499] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[6.024522] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.024544] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.024567] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.024588] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[6.024610] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.024631] (lego_loam_sr) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kcreate_default_executor_arguments\x1b[m\x1b[K()\n'}
+[6.024654] (lego_loam_sr) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.024676] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:105:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use rclcpp::ExecutorOptions() instead [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[6.024703] (lego_loam_sr) StderrLine: {'line': b'   25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::create_default_executor_arguments(\x1b[01;35m\x1b[K)\x1b[m\x1b[K, 4);\n'}
+[6.024726] (lego_loam_sr) StderrLine: {'line': b'      |                                                                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.024748] (lego_loam_sr) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[6.024769] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.024791] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.024813] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.024835] (lego_loam_sr) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[6.024856] (lego_loam_sr) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.024878] (lego_loam_sr) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kcreate_default_executor_arguments\x1b[m\x1b[K()\n'}
+[6.024901] (lego_loam_sr) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.114014] (-) TimerEvent: {}
+[6.214289] (-) TimerEvent: {}
+[6.314583] (-) TimerEvent: {}
+[6.414886] (-) TimerEvent: {}
+[6.515279] (-) TimerEvent: {}
+[6.615573] (-) TimerEvent: {}
+[6.715803] (-) TimerEvent: {}
+[6.816070] (-) TimerEvent: {}
+[6.916335] (-) TimerEvent: {}
+[7.016625] (-) TimerEvent: {}
+[7.116896] (-) TimerEvent: {}
+[7.217199] (-) TimerEvent: {}
+[7.317533] (-) TimerEvent: {}
+[7.417862] (-) TimerEvent: {}
+[7.518197] (-) TimerEvent: {}
+[7.618534] (-) TimerEvent: {}
+[7.718871] (-) TimerEvent: {}
+[7.819211] (-) TimerEvent: {}
+[7.919487] (-) TimerEvent: {}
+[8.019714] (-) TimerEvent: {}
+[8.119979] (-) TimerEvent: {}
+[8.220251] (-) TimerEvent: {}
+[8.320516] (-) TimerEvent: {}
+[8.420857] (-) TimerEvent: {}
+[8.521185] (-) TimerEvent: {}
+[8.621519] (-) TimerEvent: {}
+[8.721853] (-) TimerEvent: {}
+[8.822188] (-) TimerEvent: {}
+[8.922519] (-) TimerEvent: {}
+[9.022850] (-) TimerEvent: {}
+[9.123190] (-) TimerEvent: {}
+[9.223466] (-) TimerEvent: {}
+[9.323739] (-) TimerEvent: {}
+[9.424079] (-) TimerEvent: {}
+[9.524410] (-) TimerEvent: {}
+[9.624734] (-) TimerEvent: {}
+[9.724997] (-) TimerEvent: {}
+[9.825327] (-) TimerEvent: {}
+[9.925657] (-) TimerEvent: {}
+[10.025992] (-) TimerEvent: {}
+[10.126317] (-) TimerEvent: {}
+[10.226611] (-) TimerEvent: {}
+[10.326932] (-) TimerEvent: {}
+[10.427245] (-) TimerEvent: {}
+[10.527578] (-) TimerEvent: {}
+[10.627912] (-) TimerEvent: {}
+[10.728236] (-) TimerEvent: {}
+[10.828565] (-) TimerEvent: {}
+[10.928894] (-) TimerEvent: {}
+[11.029234] (-) TimerEvent: {}
+[11.129561] (-) TimerEvent: {}
+[11.229889] (-) TimerEvent: {}
+[11.330160] (-) TimerEvent: {}
+[11.430506] (-) TimerEvent: {}
+[11.530825] (-) TimerEvent: {}
+[11.631152] (-) TimerEvent: {}
+[11.731437] (-) TimerEvent: {}
+[11.831706] (-) TimerEvent: {}
+[11.931975] (-) TimerEvent: {}
+[12.032237] (-) TimerEvent: {}
+[12.132552] (-) TimerEvent: {}
+[12.232818] (-) TimerEvent: {}
+[12.333158] (-) TimerEvent: {}
+[12.433475] (-) TimerEvent: {}
+[12.533803] (-) TimerEvent: {}
+[12.634133] (-) TimerEvent: {}
+[12.734457] (-) TimerEvent: {}
+[12.834783] (-) TimerEvent: {}
+[12.935078] (-) TimerEvent: {}
+[13.035276] (-) TimerEvent: {}
+[13.135475] (-) TimerEvent: {}
+[13.235653] (-) TimerEvent: {}
+[13.335921] (-) TimerEvent: {}
+[13.436187] (-) TimerEvent: {}
+[13.536433] (-) TimerEvent: {}
+[13.636647] (-) TimerEvent: {}
+[13.736857] (-) TimerEvent: {}
+[13.837090] (-) TimerEvent: {}
+[13.937299] (-) TimerEvent: {}
+[14.037479] (-) TimerEvent: {}
+[14.137622] (-) TimerEvent: {}
+[14.237758] (-) TimerEvent: {}
+[14.337914] (-) TimerEvent: {}
+[14.438167] (-) TimerEvent: {}
+[14.538434] (-) TimerEvent: {}
+[14.638695] (-) TimerEvent: {}
+[14.738976] (-) TimerEvent: {}
+[14.839248] (-) TimerEvent: {}
+[14.939461] (-) TimerEvent: {}
+[15.039670] (-) TimerEvent: {}
+[15.139919] (-) TimerEvent: {}
+[15.240188] (-) TimerEvent: {}
+[15.340406] (-) TimerEvent: {}
+[15.440614] (-) TimerEvent: {}
+[15.540812] (-) TimerEvent: {}
+[15.641071] (-) TimerEvent: {}
+[15.741329] (-) TimerEvent: {}
+[15.841582] (-) TimerEvent: {}
+[15.941836] (-) TimerEvent: {}
+[16.042120] (-) TimerEvent: {}
+[16.142378] (-) TimerEvent: {}
+[16.242628] (-) TimerEvent: {}
+[16.342846] (-) TimerEvent: {}
+[16.443076] (-) TimerEvent: {}
+[16.543262] (-) TimerEvent: {}
+[16.643477] (-) TimerEvent: {}
+[16.743687] (-) TimerEvent: {}
+[16.843887] (-) TimerEvent: {}
+[16.944148] (-) TimerEvent: {}
+[17.044411] (-) TimerEvent: {}
+[17.144663] (-) TimerEvent: {}
+[17.244916] (-) TimerEvent: {}
+[17.345166] (-) TimerEvent: {}
+[17.445418] (-) TimerEvent: {}
+[17.545703] (-) TimerEvent: {}
+[17.645960] (-) TimerEvent: {}
+[17.746170] (-) TimerEvent: {}
+[17.846378] (-) TimerEvent: {}
+[17.946581] (-) TimerEvent: {}
+[18.046780] (-) TimerEvent: {}
+[18.147021] (-) TimerEvent: {}
+[18.247257] (-) TimerEvent: {}
+[18.347468] (-) TimerEvent: {}
+[18.447665] (-) TimerEvent: {}
+[18.547868] (-) TimerEvent: {}
+[18.648120] (-) TimerEvent: {}
+[18.748336] (-) TimerEvent: {}
+[18.848563] (-) TimerEvent: {}
+[18.948858] (-) TimerEvent: {}
+[19.049109] (-) TimerEvent: {}
+[19.149316] (-) TimerEvent: {}
+[19.249567] (-) TimerEvent: {}
+[19.349773] (-) TimerEvent: {}
+[19.450027] (-) TimerEvent: {}
+[19.550244] (-) TimerEvent: {}
+[19.650522] (-) TimerEvent: {}
+[19.750730] (-) TimerEvent: {}
+[19.850935] (-) TimerEvent: {}
+[19.951193] (-) TimerEvent: {}
+[20.051437] (-) TimerEvent: {}
+[20.151654] (-) TimerEvent: {}
+[20.251912] (-) TimerEvent: {}
+[20.352166] (-) TimerEvent: {}
+[20.452399] (-) TimerEvent: {}
+[20.552660] (-) TimerEvent: {}
+[20.652917] (-) TimerEvent: {}
+[20.753117] (-) TimerEvent: {}
+[20.853337] (-) TimerEvent: {}
+[20.953529] (-) TimerEvent: {}
+[21.053727] (-) TimerEvent: {}
+[21.153997] (-) TimerEvent: {}
+[21.254245] (-) TimerEvent: {}
+[21.354491] (-) TimerEvent: {}
+[21.454739] (-) TimerEvent: {}
+[21.554987] (-) TimerEvent: {}
+[21.655191] (-) TimerEvent: {}
+[21.755413] (-) TimerEvent: {}
+[21.855603] (-) TimerEvent: {}
+[21.955799] (-) TimerEvent: {}
+[22.055986] (-) TimerEvent: {}
+[22.156227] (-) TimerEvent: {}
+[22.256503] (-) TimerEvent: {}
+[22.356778] (-) TimerEvent: {}
+[22.456981] (-) TimerEvent: {}
+[22.557175] (-) TimerEvent: {}
+[22.657388] (-) TimerEvent: {}
+[22.757585] (-) TimerEvent: {}
+[22.857805] (-) TimerEvent: {}
+[22.958055] (-) TimerEvent: {}
+[23.058296] (-) TimerEvent: {}
+[23.158500] (-) TimerEvent: {}
+[23.258741] (-) TimerEvent: {}
+[23.358984] (-) TimerEvent: {}
+[23.459245] (-) TimerEvent: {}
+[23.559449] (-) TimerEvent: {}
+[23.659654] (-) TimerEvent: {}
+[23.759854] (-) TimerEvent: {}
+[23.860101] (-) TimerEvent: {}
+[23.960326] (-) TimerEvent: {}
+[24.060567] (-) TimerEvent: {}
+[24.160813] (-) TimerEvent: {}
+[24.261066] (-) TimerEvent: {}
+[24.361315] (-) TimerEvent: {}
+[24.461588] (-) TimerEvent: {}
+[24.561792] (-) TimerEvent: {}
+[24.662034] (-) TimerEvent: {}
+[24.762298] (-) TimerEvent: {}
+[24.862564] (-) TimerEvent: {}
+[24.962804] (-) TimerEvent: {}
+[25.063003] (-) TimerEvent: {}
+[25.163201] (-) TimerEvent: {}
+[25.263521] (-) TimerEvent: {}
+[25.363793] (-) TimerEvent: {}
+[25.464068] (-) TimerEvent: {}
+[25.564321] (-) TimerEvent: {}
+[25.664568] (-) TimerEvent: {}
+[25.764841] (-) TimerEvent: {}
+[25.865107] (-) TimerEvent: {}
+[25.965380] (-) TimerEvent: {}
+[26.065663] (-) TimerEvent: {}
+[26.165927] (-) TimerEvent: {}
+[26.266181] (-) TimerEvent: {}
+[26.366475] (-) TimerEvent: {}
+[26.466753] (-) TimerEvent: {}
+[26.566959] (-) TimerEvent: {}
+[26.667198] (-) TimerEvent: {}
+[26.767488] (-) TimerEvent: {}
+[26.867717] (-) TimerEvent: {}
+[26.967961] (-) TimerEvent: {}
+[27.068200] (-) TimerEvent: {}
+[27.168450] (-) TimerEvent: {}
+[27.268717] (-) TimerEvent: {}
+[27.368959] (-) TimerEvent: {}
+[27.469235] (-) TimerEvent: {}
+[27.569443] (-) TimerEvent: {}
+[27.669686] (-) TimerEvent: {}
+[27.769963] (-) TimerEvent: {}
+[27.870202] (-) TimerEvent: {}
+[27.970457] (-) TimerEvent: {}
+[28.070703] (-) TimerEvent: {}
+[28.170975] (-) TimerEvent: {}
+[28.271221] (-) TimerEvent: {}
+[28.371426] (-) TimerEvent: {}
+[28.452506] (lego_loam_sr) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lego_loam_sr\x1b[0m\n'}
+[28.471519] (-) TimerEvent: {}
+[28.571758] (-) TimerEvent: {}
+[28.672025] (-) TimerEvent: {}
+[28.772311] (-) TimerEvent: {}
+[28.872566] (-) TimerEvent: {}
+[28.972801] (-) TimerEvent: {}
+[29.073057] (-) TimerEvent: {}
+[29.088483] (lego_loam_sr) StdoutLine: {'line': b'[100%] Built target lego_loam_sr\n'}
+[29.098692] (lego_loam_sr) CommandEnded: {'returncode': 0}
+[29.112283] (lego_loam_sr) JobProgress: {'identifier': 'lego_loam_sr', 'progress': 'install'}
+[29.112558] (lego_loam_sr) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr'], 'cwd': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ko:en_US:en'), ('USER', 'jeongil'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jeongil'), ('OLDPWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1773'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '163647'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jeongil'), ('JOURNAL_STREAM', '8:20945'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jeongil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jeongil-System-Product-Name:@/tmp/.ICE-unix/1984,unix/jeongil-System-Product-Name:/tmp/.ICE-unix/1984'), ('INVOCATION_ID', '566b5630290f4b71b3bd1eea88bdc1f5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:0fcd0067-7373-4b97-8a73-c351e3fae8b6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy')]), 'shell': False}
+[29.118112] (lego_loam_sr) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.118300] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/lego_loam_sr/lego_loam_sr\n'}
+[29.119321] (lego_loam_sr) StdoutLine: {'line': b'-- Set runtime path of "/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/lego_loam_sr/lego_loam_sr" to ""\n'}
+[29.119407] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config\n'}
+[29.119521] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config/loam_config.yaml\n'}
+[29.119564] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch\n'}
+[29.119620] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/block.png\n'}
+[29.119698] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/odometry.jpg\n'}
+[29.119731] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/seg-total.jpg\n'}
+[29.119763] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/run.launch.py\n'}
+[29.119796] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/demo.gif\n'}
+[29.128884] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/dataset-demo.gif\n'}
+[29.130493] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/google-earth.png\n'}
+[29.130957] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz\n'}
+[29.130986] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz/test.rviz\n'}
+[29.131073] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/package_run_dependencies/lego_loam_sr\n'}
+[29.131136] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/parent_prefix_path/lego_loam_sr\n'}
+[29.131192] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.sh\n'}
+[29.131261] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.dsv\n'}
+[29.131290] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.sh\n'}
+[29.131341] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.dsv\n'}
+[29.131366] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.bash\n'}
+[29.131412] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.sh\n'}
+[29.131438] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.zsh\n'}
+[29.131480] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.dsv\n'}
+[29.131525] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.dsv\n'}
+[29.131571] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/packages/lego_loam_sr\n'}
+[29.131610] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.131656] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig.cmake\n'}
+[29.131708] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig-version.cmake\n'}
+[29.131734] (lego_loam_sr) StdoutLine: {'line': b'-- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.xml\n'}
+[29.132846] (lego_loam_sr) CommandEnded: {'returncode': 0}
+[29.175060] (-) TimerEvent: {}
+[29.182706] (lego_loam_sr) JobEnded: {'identifier': 'lego_loam_sr', 'rc': 0}
+[29.183441] (-) EventReactorShutdown: {}

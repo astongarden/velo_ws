@@ -1,1 +1,1 @@
-prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages
+/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/ament_cmake_environment_hooks/pythonpath.dsv

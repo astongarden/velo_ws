@@ -1,0 +1,35 @@
+[0.009s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[0.060s] [100%] Built target lego_loam_sr
+[0.066s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[0.081s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
+[0.085s] -- Install configuration: ""
+[0.085s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/lego_loam_sr/lego_loam_sr
+[0.085s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config
+[0.085s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config/loam_config.yaml
+[0.085s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/block.png
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/odometry.jpg
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/seg-total.jpg
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/run.launch.py
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/demo.gif
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/dataset-demo.gif
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/google-earth.png
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz/test.rviz
+[0.086s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/package_run_dependencies/lego_loam_sr
+[0.087s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/parent_prefix_path/lego_loam_sr
+[0.088s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.sh
+[0.088s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.dsv
+[0.088s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.sh
+[0.088s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.dsv
+[0.088s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.bash
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.sh
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.zsh
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.dsv
+[0.089s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.dsv
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/packages/lego_loam_sr
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.089s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig.cmake
+[0.090s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig-version.cmake
+[0.090s] -- Up-to-date: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.xml
+[0.090s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
