@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
+Change Dir: /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4038e/fast && /usr/bin/make -f CMakeFiles/cmTC_4038e.dir/build.make CMakeFiles/cmTC_4038e.dir/build
-make[1]: 디렉터리 '/home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 들어감
-Building C object CMakeFiles/cmTC_4038e.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4038e.dir/src.c.o   -c /home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4038e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4038e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_4038e.dir/src.c.o  -o cmTC_4038e 
-/usr/bin/ld: CMakeFiles/cmTC_4038e.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_01ce5/fast && /usr/bin/make -f CMakeFiles/cmTC_01ce5.dir/build.make CMakeFiles/cmTC_01ce5.dir/build
+make[1]: 디렉터리 '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_01ce5.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_01ce5.dir/src.c.o   -c /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_01ce5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01ce5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_01ce5.dir/src.c.o  -o cmTC_01ce5 
+/usr/bin/ld: CMakeFiles/cmTC_01ce5.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_4038e.dir/build.make:87: cmTC_4038e] 오류 1
-make[1]: 디렉터리 '/home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 나감
-make: *** [Makefile:121: cmTC_4038e/fast] 오류 2
+make[1]: *** [CMakeFiles/cmTC_01ce5.dir/build.make:87: cmTC_01ce5] 오류 1
+make[1]: 디렉터리 '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_01ce5/fast] 오류 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
+Change Dir: /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_678c5/fast && /usr/bin/make -f CMakeFiles/cmTC_678c5.dir/build.make CMakeFiles/cmTC_678c5.dir/build
-make[1]: 디렉터리 '/home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 들어감
-Building C object CMakeFiles/cmTC_678c5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_678c5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_678c5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_678c5.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_678c5.dir/CheckFunctionExists.c.o  -o cmTC_678c5  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_a32ad/fast && /usr/bin/make -f CMakeFiles/cmTC_a32ad.dir/build.make CMakeFiles/cmTC_a32ad.dir/build
+make[1]: 디렉터리 '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_a32ad.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a32ad.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a32ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a32ad.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a32ad.dir/CheckFunctionExists.c.o  -o cmTC_a32ad  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_678c5.dir/build.make:87: cmTC_678c5] 오류 1
-make[1]: 디렉터리 '/home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 나감
-make: *** [Makefile:121: cmTC_678c5/fast] 오류 2
+make[1]: *** [CMakeFiles/cmTC_a32ad.dir/build.make:87: cmTC_a32ad] 오류 1
+make[1]: 디렉터리 '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_a32ad/fast] 오류 2
 
 
 

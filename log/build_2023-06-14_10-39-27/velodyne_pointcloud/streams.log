@@ -1,0 +1,39 @@
+[0.006s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud
+[0.033s] -- The C compiler identification is GNU 9.4.0
+[0.060s] -- The CXX compiler identification is GNU 9.4.0
+[0.062s] -- Check for working C compiler: /usr/bin/cc
+[0.098s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.098s] -- Detecting C compiler ABI info
+[0.135s] -- Detecting C compiler ABI info - done
+[0.144s] -- Detecting C compile features
+[0.144s] -- Detecting C compile features - done
+[0.145s] -- Check for working CXX compiler: /usr/bin/c++
+[0.184s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.185s] -- Detecting CXX compiler ABI info
+[0.224s] -- Detecting CXX compiler ABI info - done
+[0.230s] -- Detecting CXX compile features
+[0.230s] -- Detecting CXX compile features - done
+[0.231s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.244s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.244s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.334s] -- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+[0.339s] CMake Error at CMakeLists.txt:15 (find_package):
+[0.339s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[0.339s]   project has asked CMake to find a package configuration file provided by
+[0.339s]   "diagnostic_updater", but CMake did not find one.
+[0.340s] 
+[0.340s]   Could not find a package configuration file provided by
+[0.340s]   "diagnostic_updater" with any of the following names:
+[0.340s] 
+[0.340s]     diagnostic_updaterConfig.cmake
+[0.340s]     diagnostic_updater-config.cmake
+[0.340s] 
+[0.340s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[0.340s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[0.340s]   files.  If "diagnostic_updater" provides a separate development package or
+[0.340s]   SDK, be sure it has been installed.
+[0.340s] 
+[0.340s] 
+[0.340s] -- Configuring incomplete, errors occurred!
+[0.340s] See also "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeOutput.log".
+[0.342s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud' returned '1': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud

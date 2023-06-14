@@ -1,10 +1,10 @@
 {
   "package_name": "velodyne_msgs",
-  "output_dir": "/home/d/velo_ws/build/velodyne_msgs/rosidl_generator_py/velodyne_msgs",
+  "output_dir": "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_generator_py/velodyne_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodynePacket.idl",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodyneScan.idl"
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodynePacket.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodyneScan.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
@@ -54,8 +54,8 @@
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/foxy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodynePacket.idl",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodyneScan.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodynePacket.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodyneScan.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl",

@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DHAVE_NEW_YAMLCPP
 
-CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/d/velo_ws/src/velodyne-ros2/velodyne_pointcloud/include -I/usr/include/eigen3 -I/usr/local/include/pcl-1.12 -I/opt/ros/foxy/src/gtest_vendor/. 
+CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud/include -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/opt/ros/foxy/src/gtest_vendor/. 
 

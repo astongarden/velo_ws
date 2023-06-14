@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"velodyne_msgs\" -Dvelodyne_msgs__python_EXPORTS
 
-C_INCLUDES = -I/home/d/velo_ws/build/velodyne_msgs/rosidl_generator_c -I/home/d/velo_ws/build/velodyne_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/d/velo_ws/build/velodyne_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_generator_c -I/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 

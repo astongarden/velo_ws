@@ -1,10 +1,10 @@
 {
   "package_name": "velodyne_msgs",
-  "output_dir": "/home/d/velo_ws/build/velodyne_msgs/rosidl_typesupport_c/velodyne_msgs",
+  "output_dir": "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_typesupport_c/velodyne_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodynePacket.idl",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodyneScan.idl"
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodynePacket.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs:msg/VelodyneScan.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
@@ -47,8 +47,8 @@
     "/opt/ros/foxy/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodynePacket.idl",
-    "/home/d/velo_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodyneScan.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodynePacket.idl",
+    "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_adapter/velodyne_msgs/msg/VelodyneScan.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl",

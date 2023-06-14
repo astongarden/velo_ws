@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/d/velo_ws/src/velodyne-ros2/velodyne_pointcloud
+CMAKE_SOURCE_DIR = /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/d/velo_ws/build/velodyne_pointcloud
+CMAKE_BINARY_DIR = /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/d/velo_ws/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/d/velo_ws/src/velodyne-ros2/velodyne_pointcloud /home/d/velo_ws/src/velodyne-ros2/velodyne_pointcloud /home/d/velo_ws/build/velodyne_pointcloud /home/d/velo_ws/build/velodyne_pointcloud /home/d/velo_ws/build/velodyne_pointcloud/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

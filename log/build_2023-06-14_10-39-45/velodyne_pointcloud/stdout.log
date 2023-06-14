@@ -1,0 +1,5 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+-- Configuring incomplete, errors occurred!
+See also "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/CMakeFiles/CMakeOutput.log".

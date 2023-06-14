@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"velodyne_msgs\" -Dvelodyne_msgs__rosidl_typesupport_cpp_EXPORTS
 
-CXX_INCLUDES = -I/home/d/velo_ws/build/velodyne_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
 

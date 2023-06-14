@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/d/velo_ws/install/velodyne_driver")
+  set(CMAKE_INSTALL_PREFIX "/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wno-missing-field-initializers -Wall -Wextra -Wpedantic -std=gnu+
 
 CXX_DEFINES = -DROS_PACKAGE_NAME=\"velodyne_driver\"
 
-CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/d/velo_ws/src/velodyne-ros2/velodyne_driver/include -I/opt/ros/foxy/src/gtest_vendor/. 
+CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/include -I/opt/ros/foxy/src/gtest_vendor/. 
 

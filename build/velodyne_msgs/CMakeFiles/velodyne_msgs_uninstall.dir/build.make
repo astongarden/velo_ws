@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/d/velo_ws/src/velodyne-ros2/velodyne_msgs
+CMAKE_SOURCE_DIR = /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/d/velo_ws/build/velodyne_msgs
+CMAKE_BINARY_DIR = /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs
 
 # Utility rule file for velodyne_msgs_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/d/velo_ws/build/velodyne_msgs
 include CMakeFiles/velodyne_msgs_uninstall.dir/progress.make
 
 CMakeFiles/velodyne_msgs_uninstall:
-	/usr/bin/cmake -P /home/d/velo_ws/build/velodyne_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 velodyne_msgs_uninstall: CMakeFiles/velodyne_msgs_uninstall
 velodyne_msgs_uninstall: CMakeFiles/velodyne_msgs_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/velodyne_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/velodyne_msgs_uninstall.dir/clean
 
 CMakeFiles/velodyne_msgs_uninstall.dir/depend:
-	cd /home/d/velo_ws/build/velodyne_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/d/velo_ws/src/velodyne-ros2/velodyne_msgs /home/d/velo_ws/src/velodyne-ros2/velodyne_msgs /home/d/velo_ws/build/velodyne_msgs /home/d/velo_ws/build/velodyne_msgs /home/d/velo_ws/build/velodyne_msgs/CMakeFiles/velodyne_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/CMakeFiles/velodyne_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/velodyne_msgs_uninstall.dir/depend
 

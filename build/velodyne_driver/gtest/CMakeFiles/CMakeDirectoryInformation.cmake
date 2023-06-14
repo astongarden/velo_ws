@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/foxy/src/gtest_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/d/velo_ws/build/velodyne_driver")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
