@@ -1,1 +1,0 @@
-/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs/rosidl_generator_c/velodyne_msgs/msg/velodyne_packet.h

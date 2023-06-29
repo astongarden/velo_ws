@@ -1,9 +1,0 @@
-In file included from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/src/lib/input.cpp:62[m[K:
-[01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/include/velodyne_driver/input.hpp:58:10:[m[K [01;31m[Kfatal error: [m[Kpcap.h: 그런 파일이나 디렉터리가 없습니다
-   58 | #include [01;31m[K<pcap.h>[m[K
-      |          [01;31m[K^~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [src/lib/CMakeFiles/velodyne_input.dir/build.make:63: src/lib/CMakeFiles/velodyne_input.dir/input.cpp.o] 오류 1
-make[1]: *** [CMakeFiles/Makefile2:262: src/lib/CMakeFiles/velodyne_input.dir/all] 오류 2
-make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
-make: *** [Makefile:141: all] 오류 2

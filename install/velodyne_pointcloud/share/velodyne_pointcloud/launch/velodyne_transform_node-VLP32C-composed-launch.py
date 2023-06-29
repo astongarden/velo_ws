@@ -1,1 +1,0 @@
-/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-composed-launch.py

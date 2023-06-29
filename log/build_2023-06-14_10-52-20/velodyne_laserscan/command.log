@@ -1,4 +1,0 @@
-Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan -- -j20 -l20
-Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan -- -j20 -l20
-Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan
-Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan
