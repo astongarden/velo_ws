@@ -1,0 +1,620 @@
+[0.135s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.135s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f662b39bd30>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=20, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f662b39bd30>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f662b3272e0>)
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.148s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jeongil/ros_foxy_ws/velodyne_ws'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/LeGO-LOAM) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/LeGO-LOAM-SR/LeGO-LOAM' with type 'ros.ament_cmake' and name 'lego_loam_sr'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/LeGO-LOAM-SR/cloud_msgs) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/LeGO-LOAM-SR/cloud_msgs' with type 'ros.ament_cmake' and name 'cloud_msgs'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne-ros2/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_driver) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne-ros2/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_laserscan) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne-ros2/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_msgs) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne-ros2/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne-ros2/velodyne_pointcloud) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne-ros2/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.175s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/foxy
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_target' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'cloud_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.204s] DEBUG:colcon.colcon_core.verb:Building package 'cloud_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/cloud_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_laserscan', 'symlink_install': False, 'test_result_base': None}
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_target' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_clean_cache' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_clean_first' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'cmake_force_configure' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'ament_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'catkin_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'lego_loam_sr' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.206s] DEBUG:colcon.colcon_core.verb:Building package 'lego_loam_sr' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM', 'symlink_install': False, 'test_result_base': None}
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.207s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver', 'symlink_install': False, 'test_result_base': None}
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_cache' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_first' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_force_configure' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'ament_cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.207s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_pointcloud' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud', 'symlink_install': False, 'test_result_base': None}
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_args' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target' from command line to 'None'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_cache' from command line to 'False'
+[0.207s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_first' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_force_configure' from command line to 'False'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'ament_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_cmake_args' from command line to 'None'
+[0.208s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.208s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne', 'merge_install': False, 'path': '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne', 'symlink_install': False, 'test_result_base': None}
+[0.208s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.209s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs' with build type 'ament_cmake'
+[0.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs'
+[0.212s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.214s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/cloud_msgs' with build type 'ament_cmake'
+[0.214s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/cloud_msgs'
+[0.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.217s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_laserscan' with build type 'ament_cmake'
+[0.218s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_laserscan'
+[0.218s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.218s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs
+[0.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/cloud_msgs -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs
+[0.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/cloud_msgs -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs
+[1.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs -- -j20 -l20
+[1.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_msgs -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs
+[1.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs -- -j20 -l20
+[1.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan -- -j20 -l20
+[2.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs -- -j20 -l20
+[2.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs -- -j20 -l20
+[2.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs
+[2.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs
+[2.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cloud_msgs)
+[2.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs
+[2.584s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs' for CMake module files
+[2.584s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs' for CMake config files
+[2.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'cmake_prefix_path')
+[2.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.ps1'
+[2.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.dsv'
+[2.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.sh'
+[2.586s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib'
+[2.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'ld_library_path_lib')
+[2.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.ps1'
+[2.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.dsv'
+[2.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.sh'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/bin'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/pkgconfig/cloud_msgs.pc'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages'
+[2.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'pythonpath')
+[2.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.ps1'
+[2.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.dsv'
+[2.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.sh'
+[2.588s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/bin'
+[2.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.ps1'
+[2.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.dsv'
+[2.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.sh'
+[2.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.bash'
+[2.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.zsh'
+[2.591s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/colcon-core/packages/cloud_msgs)
+[2.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[2.594s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs' for CMake module files
+[2.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_msgs
+[2.594s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs' for CMake config files
+[2.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[2.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[2.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[2.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[2.595s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib'
+[2.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[2.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[2.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[2.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[2.596s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/bin'
+[2.596s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[2.597s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages'
+[2.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'pythonpath')
+[2.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.ps1'
+[2.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.dsv'
+[2.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.sh'
+[2.598s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/bin'
+[2.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[2.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[2.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[2.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[2.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[2.599s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[2.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cloud_msgs)
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs' for CMake module files
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs' for CMake config files
+[2.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'cmake_prefix_path')
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.ps1'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.dsv'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/cmake_prefix_path.sh'
+[2.618s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib'
+[2.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'ld_library_path_lib')
+[2.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.ps1'
+[2.619s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.dsv'
+[2.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/ld_library_path_lib.sh'
+[2.620s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/bin'
+[2.620s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/pkgconfig/cloud_msgs.pc'
+[2.620s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages'
+[2.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('cloud_msgs', 'pythonpath')
+[2.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.ps1'
+[2.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.dsv'
+[2.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/hook/pythonpath.sh'
+[2.621s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/bin'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.ps1'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.dsv'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.sh'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.bash'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/package.zsh'
+[2.623s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/colcon-core/packages/cloud_msgs)
+[2.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM' with build type 'ament_cmake'
+[2.623s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM'
+[2.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr
+[2.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[2.632s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs' for CMake module files
+[2.632s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs' for CMake config files
+[2.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[2.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[2.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[2.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib'
+[2.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[2.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[2.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[2.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/bin'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[2.635s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages'
+[2.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'pythonpath')
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.ps1'
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.dsv'
+[2.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/hook/pythonpath.sh'
+[2.636s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/bin'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[2.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[2.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[2.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[2.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[2.638s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver' with build type 'ament_cmake'
+[2.638s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver'
+[2.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.642s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud' with build type 'ament_cmake'
+[2.642s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud'
+[2.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver
+[2.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud
+[3.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver
+[3.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver -- -j20 -l20
+[3.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud
+[3.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud -- -j20 -l20
+[4.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr
+[4.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[5.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan -- -j20 -l20
+[5.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan
+[5.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[5.528s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan' for CMake module files
+[5.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_laserscan
+[5.529s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan' for CMake config files
+[5.529s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[5.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[5.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[5.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[5.531s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib'
+[5.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[5.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[5.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[5.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[5.532s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/bin'
+[5.532s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[5.532s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/python3.8/site-packages'
+[5.532s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/bin'
+[5.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[5.534s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[5.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[5.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[5.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[5.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[5.551s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[5.553s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan' for CMake module files
+[5.553s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan' for CMake config files
+[5.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[5.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[5.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[5.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[5.554s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib'
+[5.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[5.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/bin'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib/python3.8/site-packages'
+[5.556s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/bin'
+[5.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[5.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[5.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[5.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[5.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[5.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[9.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver -- -j20 -l20
+[9.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver
+[9.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[9.365s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver' for CMake module files
+[9.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver
+[9.366s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver' for CMake config files
+[9.366s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[9.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[9.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[9.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[9.367s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib'
+[9.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[9.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[9.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[9.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[9.368s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/bin'
+[9.368s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[9.369s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/python3.8/site-packages'
+[9.369s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/bin'
+[9.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[9.370s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[9.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[9.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[9.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[9.370s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[9.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[9.389s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver' for CMake module files
+[9.389s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver' for CMake config files
+[9.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[9.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[9.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[9.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[9.391s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib'
+[9.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[9.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[9.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[9.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[9.392s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/bin'
+[9.392s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[9.392s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib/python3.8/site-packages'
+[9.392s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/bin'
+[9.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[9.393s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[9.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[9.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[9.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[9.394s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[14.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud -- -j20 -l20
+[14.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud
+[14.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[14.439s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud' for CMake module files
+[14.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud
+[14.440s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud' for CMake config files
+[14.440s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[14.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[14.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[14.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[14.441s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib'
+[14.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[14.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[14.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[14.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[14.443s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/bin'
+[14.443s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[14.443s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/python3.8/site-packages'
+[14.443s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/bin'
+[14.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[14.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[14.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[14.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[14.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[14.444s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[14.461s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[14.463s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud' for CMake module files
+[14.463s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud' for CMake config files
+[14.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[14.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[14.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[14.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[14.464s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib'
+[14.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[14.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[14.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[14.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[14.466s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/bin'
+[14.466s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[14.466s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib/python3.8/site-packages'
+[14.466s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/bin'
+[14.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[14.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[14.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[14.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[14.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[14.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[14.468s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne' with build type 'ament_cmake'
+[14.468s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne'
+[14.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne
+[14.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne
+[14.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne -- -j20 -l20
+[14.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne -- -j20 -l20
+[14.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne
+[14.919s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[14.920s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne' for CMake module files
+[14.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne
+[14.921s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne' for CMake config files
+[14.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[14.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[14.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[14.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[14.923s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/bin'
+[14.923s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[14.923s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/lib/python3.8/site-packages'
+[14.923s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/bin'
+[14.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.ps1'
+[14.924s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.dsv'
+[14.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.sh'
+[14.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.bash'
+[14.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.zsh'
+[14.925s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[14.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[14.938s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne' for CMake module files
+[14.939s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne' for CMake config files
+[14.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[14.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[14.940s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[14.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[14.940s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/bin'
+[14.940s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[14.940s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/lib/python3.8/site-packages'
+[14.940s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/bin'
+[14.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.ps1'
+[14.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.dsv'
+[14.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.sh'
+[14.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.bash'
+[14.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/package.zsh'
+[14.942s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[32.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[32.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
+[32.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lego_loam_sr)
+[32.491s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr' for CMake module files
+[32.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
+[32.491s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr' for CMake config files
+[32.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('lego_loam_sr', 'cmake_prefix_path')
+[32.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.ps1'
+[32.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.dsv'
+[32.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.sh'
+[32.493s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib'
+[32.493s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/bin'
+[32.493s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/pkgconfig/lego_loam_sr.pc'
+[32.493s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/python3.8/site-packages'
+[32.493s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/bin'
+[32.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.ps1'
+[32.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.dsv'
+[32.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.sh'
+[32.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.bash'
+[32.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.zsh'
+[32.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/colcon-core/packages/lego_loam_sr)
+[32.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lego_loam_sr)
+[32.514s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr' for CMake module files
+[32.515s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr' for CMake config files
+[32.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('lego_loam_sr', 'cmake_prefix_path')
+[32.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.ps1'
+[32.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.dsv'
+[32.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/hook/cmake_prefix_path.sh'
+[32.517s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib'
+[32.518s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/bin'
+[32.518s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/pkgconfig/lego_loam_sr.pc'
+[32.518s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/python3.8/site-packages'
+[32.518s] Level 1:colcon.colcon_core.environment:checking '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/bin'
+[32.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.ps1'
+[32.519s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.dsv'
+[32.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.sh'
+[32.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.bash'
+[32.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.zsh'
+[32.520s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/colcon-core/packages/lego_loam_sr)
+[32.521s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[32.521s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[32.521s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[32.521s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[32.524s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[32.524s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[32.525s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[32.535s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[32.536s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/local_setup.ps1'
+[32.536s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jeongil/ros_foxy_ws/velodyne_ws/install/_local_setup_util_ps1.py'
+[32.537s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/setup.ps1'
+[32.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/local_setup.sh'
+[32.538s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jeongil/ros_foxy_ws/velodyne_ws/install/_local_setup_util_sh.py'
+[32.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/setup.sh'
+[32.538s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/local_setup.bash'
+[32.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/setup.bash'
+[32.539s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/local_setup.zsh'
+[32.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jeongil/ros_foxy_ws/velodyne_ws/install/setup.zsh'

@@ -1,0 +1,286 @@
+[0.005s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr
+[0.034s] -- The C compiler identification is GNU 9.4.0
+[0.062s] -- The CXX compiler identification is GNU 9.4.0
+[0.065s] -- Check for working C compiler: /usr/bin/cc
+[0.102s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.102s] -- Detecting C compiler ABI info
+[0.139s] -- Detecting C compiler ABI info - done
+[0.145s] -- Detecting C compile features
+[0.146s] -- Detecting C compile features - done
+[0.147s] -- Check for working CXX compiler: /usr/bin/c++
+[0.188s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.188s] -- Detecting CXX compiler ABI info
+[0.229s] -- Detecting CXX compiler ABI info - done
+[0.235s] -- Detecting CXX compile features
+[0.236s] -- Detecting CXX compile features - done
+[0.237s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.250s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.250s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.341s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.365s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.368s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.408s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.424s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.466s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.496s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.497s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.497s] -- Looking for pthread.h
+[0.535s] -- Looking for pthread.h - found
+[0.535s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.572s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.573s] -- Looking for pthread_create in pthreads
+[0.602s] -- Looking for pthread_create in pthreads - not found
+[0.602s] -- Looking for pthread_create in pthread
+[0.641s] -- Looking for pthread_create in pthread - found
+[0.642s] -- Found Threads: TRUE  
+[0.726s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.788s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.828s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[0.834s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.015s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[1.019s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.021s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[1.035s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[1.129s] -- Found cloud_msgs: 1.0.0 (/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake)
+[1.156s] -- Checking for module 'eigen3'
+[1.164s] --   Found eigen3, version 3.3.7
+[1.182s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.183s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[1.208s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[1.217s] -- Checking for module 'flann'
+[1.227s] --   Found flann, version 1.9.1
+[1.250s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.283s] -- The imported target "vtkParseOGLExt" references the file
+[1.283s]    "/usr/bin/vtkParseOGLExt-7.1"
+[1.283s] but this file does not exist.  Possible reasons include:
+[1.283s] * The file was deleted, renamed, or moved to another location.
+[1.283s] * An install or uninstall procedure did not complete successfully.
+[1.283s] * The installation package was faulty and contained
+[1.283s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.283s] but not all the files it references.
+[1.283s] 
+[1.284s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[1.284s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[1.284s] but this file does not exist.  Possible reasons include:
+[1.284s] * The file was deleted, renamed, or moved to another location.
+[1.284s] * An install or uninstall procedure did not complete successfully.
+[1.284s] * The installation package was faulty and contained
+[1.284s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.284s] but not all the files it references.
+[1.284s] 
+[1.284s] -- The imported target "vtk" references the file
+[1.284s]    "/usr/bin/vtk"
+[1.284s] but this file does not exist.  Possible reasons include:
+[1.284s] * The file was deleted, renamed, or moved to another location.
+[1.285s] * An install or uninstall procedure did not complete successfully.
+[1.285s] * The installation package was faulty and contained
+[1.285s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.285s] but not all the files it references.
+[1.285s] 
+[1.285s] -- The imported target "pvtk" references the file
+[1.285s]    "/usr/bin/pvtk"
+[1.285s] but this file does not exist.  Possible reasons include:
+[1.285s] * The file was deleted, renamed, or moved to another location.
+[1.285s] * An install or uninstall procedure did not complete successfully.
+[1.285s] * The installation package was faulty and contained
+[1.285s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[1.285s] but not all the files it references.
+[1.285s] 
+[1.303s] -- Checking for module 'libusb-1.0'
+[1.316s] --   Found libusb-1.0, version 1.0.23
+[1.350s] -- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.400s] -- Found OpenNI: /usr/lib/libOpenNI.so  
+[1.400s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.457s] -- Found OpenNI2: /usr/lib/libOpenNI2.so  
+[1.457s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.457s] ** WARNING ** io features related to pcap will be disabled
+[1.457s] ** WARNING ** io features related to png will be disabled
+[1.471s] -- Found libusb-1.0: /usr/include  
+[1.471s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[1.477s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.483s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[1.511s] -- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
+[1.511s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[1.517s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[1.527s] -- looking for PCL_COMMON
+[1.527s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.528s] -- looking for PCL_KDTREE
+[1.528s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.528s] -- looking for PCL_OCTREE
+[1.529s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.529s] -- looking for PCL_SEARCH
+[1.530s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.530s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.530s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.531s] -- looking for PCL_FILTERS
+[1.531s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.531s] -- looking for PCL_2D
+[1.532s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[1.532s] -- looking for PCL_GEOMETRY
+[1.532s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[1.532s] -- looking for PCL_IO
+[1.532s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.533s] -- looking for PCL_FEATURES
+[1.533s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.533s] -- looking for PCL_ML
+[1.534s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.534s] -- looking for PCL_SEGMENTATION
+[1.535s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.535s] -- looking for PCL_VISUALIZATION
+[1.536s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.536s] -- looking for PCL_SURFACE
+[1.536s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.537s] -- looking for PCL_REGISTRATION
+[1.537s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.537s] -- looking for PCL_KEYPOINTS
+[1.538s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.538s] -- looking for PCL_TRACKING
+[1.539s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.539s] -- looking for PCL_RECOGNITION
+[1.540s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.540s] -- looking for PCL_STEREO
+[1.541s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.541s] -- looking for PCL_APPS
+[1.542s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.542s] -- looking for PCL_IN_HAND_SCANNER
+[1.542s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+[1.542s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.543s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+[1.543s] -- looking for PCL_OUTOFCORE
+[1.543s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.544s] -- looking for PCL_PEOPLE
+[1.544s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[1.545s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;FLANN::FLANN  
+[1.548s] -- GTSAM include directory:  /usr/local/lib/cmake/GTSAM/../../../include;/usr/include;/usr/local/include/gtsam/3rdparty/Eigen/
+[1.584s] -- Found Boost: /usr/include (found version "1.71.0") found components: thread serialization timer chrono date_time atomic 
+[1.648s] -- Configuring done
+[1.704s] -- Generating done
+[1.705s] -- Build files have been written to: /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
+[1.715s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM -DCMAKE_INSTALL_PREFIX=/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr
+[1.716s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[1.743s] [35m[1mScanning dependencies of target lego_loam_sr[0m
+[1.812s] [ 16%] [32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/imageProjection.cpp.o[0m
+[1.813s] [ 33%] [32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/featureAssociation.cpp.o[0m
+[1.813s] [ 50%] [32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/mapOptmization.cpp.o[0m
+[1.813s] [ 66%] [32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/transformFusion.cpp.o[0m
+[1.814s] [ 83%] [32mBuilding CXX object CMakeFiles/lego_loam_sr.dir/src/main.cpp.o[0m
+[5.619s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:[m[K In destructor ‘[01m[Kvirtual FeatureAssociation::~FeatureAssociation()[m[K’:
+[5.619s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:110:25:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kcloud_msgs::msg::CloudInfo[m[K’ {aka ‘[01m[Kcloud_msgs::msg::CloudInfo_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Kcloud_msgs::msg::CloudInfo_<ContainerAllocator>::CloudInfo_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[5.619s]   110 |   _input_channel.send({}[01;35m[K)[m[K;
+[5.619s]       |                         [01;35m[K^[m[K
+[5.619s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/featureAssociation.cpp:110:25:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[5.950s] In file included from [01m[K/usr/local/include/gtsam/base/types.h:31[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/global_includes.h:22[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/base/Vector.h:27[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/base/Matrix.h:26[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/base/Manifold.h:22[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/geometry/BearingRange.h:21[m[K,
+[5.950s]                  from [01m[K/usr/local/include/gtsam/geometry/Pose3.h:22[m[K,
+[5.950s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8[m[K,
+[5.950s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:4[m[K:
+[5.950s] [01m[K/usr/include/tbb/task_scheduler_init.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
+[5.950s]    21 | #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+[5.950s]       |                                                                                                                                                          [01;36m[K^[m[K
+[6.277s] In file included from [01m[K/usr/local/include/gtsam/base/types.h:31[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/global_includes.h:22[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/base/Vector.h:27[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/base/Matrix.h:26[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/base/Manifold.h:22[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/geometry/BearingRange.h:21[m[K,
+[6.277s]                  from [01m[K/usr/local/include/gtsam/geometry/Pose3.h:22[m[K,
+[6.277s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8[m[K,
+[6.277s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:37[m[K:
+[6.277s] [01m[K/usr/include/tbb/task_scheduler_init.h:21:154:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
+[6.277s]    21 | #pragma message("TBB Warning: tbb/task_scheduler_init.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+[6.277s]       |                                                                                                                                                          [01;36m[K^[m[K
+[6.513s] In file included from [01m[K/usr/local/include/gtsam/geometry/Unit3.h:36[m[K,
+[6.513s]                  from [01m[K/usr/local/include/gtsam/geometry/Rot3.h:25[m[K,
+[6.513s]                  from [01m[K/usr/local/include/gtsam/geometry/Pose3.h:24[m[K,
+[6.513s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8[m[K,
+[6.513s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:4[m[K:
+[6.513s] [01m[K/usr/include/tbb/mutex.h:21:140:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
+[6.514s]    21 | #pragma message("TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+[6.514s]       |                                                                                                                                            [01;36m[K^[m[K
+[6.851s] In file included from [01m[K/usr/local/include/gtsam/geometry/Unit3.h:36[m[K,
+[6.851s]                  from [01m[K/usr/local/include/gtsam/geometry/Rot3.h:25[m[K,
+[6.851s]                  from [01m[K/usr/local/include/gtsam/geometry/Pose3.h:24[m[K,
+[6.851s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptimization.h:8[m[K,
+[6.851s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:37[m[K:
+[6.851s] [01m[K/usr/include/tbb/mutex.h:21:140:[m[K [01;36m[Knote: [m[K#pragma message: TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual.
+[6.851s]    21 | #pragma message("TBB Warning: tbb/mutex.h is deprecated. For details, please see Deprecated Features appendix in the TBB reference manual."[01;36m[K)[m[K
+[6.851s]       |                                                                                                                                            [01;36m[K^[m[K
+[7.323s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.323s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:71:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()[m[K’ is deprecated: use rclcpp::ExecutorOptions() instead [[01;35m[K-Wdeprecated-declarations[m[K]
+[7.323s]    25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::[01;35m[Kcreate_default_executor_arguments[m[K(), 4);
+[7.323s]       |                                                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.323s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.324s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1[m[K:
+[7.324s] [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.324s]    49 | [01;36m[Kcreate_default_executor_arguments[m[K()
+[7.324s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.324s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()[m[K’ is deprecated: use rclcpp::ExecutorOptions() instead [[01;35m[K-Wdeprecated-declarations[m[K]
+[7.324s]    25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::create_default_executor_arguments([01;35m[K)[m[K, 4);
+[7.324s]       |                                                                                                         [01;35m[K^[m[K
+[7.324s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.324s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1[m[K:
+[7.324s] [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.324s]    49 | [01;36m[Kcreate_default_executor_arguments[m[K()
+[7.324s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.324s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:25:105:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::ExecutorOptions rclcpp::executor::create_default_executor_arguments()[m[K’ is deprecated: use rclcpp::ExecutorOptions() instead [[01;35m[K-Wdeprecated-declarations[m[K]
+[7.324s]    25 |   rclcpp::executors::MultiThreadedExecutor executor(rclcpp::executor::create_default_executor_arguments([01;35m[K)[m[K, 4);
+[7.324s]       |                                                                                                         [01;35m[K^[m[K
+[7.324s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[7.324s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[7.324s]                  from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/main.cpp:1[m[K:
+[7.324s] [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:49:1:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.324s]    49 | [01;36m[Kcreate_default_executor_arguments[m[K()
+[7.324s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.651s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:[m[K In destructor ‘[01m[Kvirtual MapOptimization::~MapOptimization()[m[K’:
+[7.651s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:128:25:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Knav_msgs::msg::Odometry[m[K’ {aka ‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Knav_msgs::msg::Odometry_<ContainerAllocator>::Odometry_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[7.651s]   128 |   _input_channel.send({}[01;35m[K)[m[K;
+[7.651s]       |                         [01;35m[K^[m[K
+[7.651s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/LeGO-LOAM-SR/LeGO-LOAM/src/mapOptmization.cpp:128:25:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[29.202s] [100%] [32m[1mLinking CXX executable lego_loam_sr[0m
+[29.791s] [100%] Built target lego_loam_sr
+[29.802s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[29.837s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
+[29.846s] -- Install configuration: ""
+[29.846s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/lego_loam_sr/lego_loam_sr
+[29.847s] -- Set runtime path of "/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/lib/lego_loam_sr/lego_loam_sr" to ""
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/config/loam_config.yaml
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/block.png
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/odometry.jpg
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/seg-total.jpg
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/run.launch.py
+[29.847s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/demo.gif
+[29.861s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/dataset-demo.gif
+[29.863s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/launch/google-earth.png
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/rviz/test.rviz
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/package_run_dependencies/lego_loam_sr
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/parent_prefix_path/lego_loam_sr
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.sh
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/ament_prefix_path.dsv
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.sh
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/environment/path.dsv
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.bash
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.sh
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.zsh
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/local_setup.dsv
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.dsv
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/ament_index/resource_index/packages/lego_loam_sr
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.864s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig.cmake
+[29.865s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/cmake/lego_loam_srConfig-version.cmake
+[29.865s] -- Installing: /home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr/share/lego_loam_sr/package.xml
+[29.867s] Invoked command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr' returned '0': AMENT_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda-11.6/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.6/lib64 PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr
