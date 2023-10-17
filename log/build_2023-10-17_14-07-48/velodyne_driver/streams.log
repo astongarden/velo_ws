@@ -1,0 +1,42 @@
+[0.176s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_pointcloud:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(velodyne) LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda/lib64:/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/lib /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver -- -j20 -l20
+[0.190s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.203s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.292s] -- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+[0.303s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.305s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.370s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[0.439s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.440s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.521s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.551s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.725s] -- Found velodyne_msgs: 2.3.0 (/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[0.747s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.782s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.785s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.786s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.786s] -- Configured cppcheck include dirs: /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/include
+[0.786s] -- Configured cppcheck exclude dirs and/or files: 
+[0.786s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.787s] -- Configured cpplint exclude dirs and/or files: 
+[0.787s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.787s] -- Added test 'lint_cmake' to check CMake code style
+[0.787s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.788s] -- Added test 'uncrustify' to check C / C++ code style
+[0.788s] -- Configured uncrustify additional arguments: 
+[0.788s] -- Added test 'xmllint' to check XML markup files
+[0.790s] -- Configuring done
+[0.804s] -- Generating done
+[0.805s] -- Build files have been written to: /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver
+[0.822s] [35m[1mScanning dependencies of target velodyne_input[0m
+[0.827s] [ 33%] Built target gtest_main
+[0.828s] [ 33%] Built target gtest
+[0.834s] [ 41%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_input.dir/input.cpp.o[0m
+[0.868s] In file included from [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/src/lib/input.cpp:62[m[K:
+[0.868s] [01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_driver/include/velodyne_driver/input.hpp:58:10:[m[K [01;31m[Kfatal error: [m[Kpcap.h: 그런 파일이나 디렉터리가 없습니다
+[0.868s]    58 | #include [01;31m[K<pcap.h>[m[K
+[0.868s]       |          [01;31m[K^~~~~~~~[m[K
+[0.868s] compilation terminated.
+[0.868s] make[2]: *** [src/lib/CMakeFiles/velodyne_input.dir/build.make:63: src/lib/CMakeFiles/velodyne_input.dir/input.cpp.o] 오류 1
+[0.869s] make[1]: *** [CMakeFiles/Makefile2:262: src/lib/CMakeFiles/velodyne_input.dir/all] 오류 2
+[0.869s] make: *** [Makefile:141: all] 오류 2

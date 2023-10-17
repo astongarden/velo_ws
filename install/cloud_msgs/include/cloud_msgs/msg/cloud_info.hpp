@@ -7,5 +7,6 @@
 #include "cloud_msgs/msg/detail/cloud_info__struct.hpp"
 #include "cloud_msgs/msg/detail/cloud_info__builder.hpp"
 #include "cloud_msgs/msg/detail/cloud_info__traits.hpp"
+#include "cloud_msgs/msg/detail/cloud_info__type_support.hpp"
 
 #endif  // CLOUD_MSGS__MSG__CLOUD_INFO_HPP_

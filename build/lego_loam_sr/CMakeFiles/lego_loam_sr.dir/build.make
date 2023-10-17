@@ -167,7 +167,7 @@ lego_loam_sr: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-lego_loam_sr: /usr/local/lib/libgtsam.so.4.0.0
+lego_loam_sr: /usr/lib/x86_64-linux-gnu/libgtsam.so.4.3a0
 lego_loam_sr: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
 lego_loam_sr: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
 lego_loam_sr: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
@@ -285,11 +285,12 @@ lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_timer.so
 lego_loam_sr: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-lego_loam_sr: /usr/lib/x86_64-linux-gnu/libtbb.so
-lego_loam_sr: /usr/lib/x86_64-linux-gnu/libtbbmalloc.so
-lego_loam_sr: /usr/local/lib/libmetis.so
+lego_loam_sr: /usr/lib/x86_64-linux-gnu/libtbb.so.2
+lego_loam_sr: /usr/lib/x86_64-linux-gnu/libtbbmalloc.so.2
+lego_loam_sr: /usr/lib/x86_64-linux-gnu/libmetis.so
 lego_loam_sr: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
 lego_loam_sr: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
 lego_loam_sr: /opt/ros/foxy/lib/libtf2_ros.so

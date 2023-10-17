@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtransform.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtransform.so"
-         OLD_RPATH "/usr/usr/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/src/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/usr/usr/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/src/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtransform.so")
@@ -72,7 +72,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_pointcloud/velodyne_transform_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_pointcloud/velodyne_transform_node"
-         OLD_RPATH "/usr/usr/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/src/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/usr/usr/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud:/opt/ros/foxy/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud/src/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_pointcloud/velodyne_transform_node")

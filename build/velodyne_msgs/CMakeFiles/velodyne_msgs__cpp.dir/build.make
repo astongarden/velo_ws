@@ -57,10 +57,13 @@ CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_p
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp
+CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_scan.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp
 CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp
+CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp
+CMakeFiles/velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -68,16 +71,20 @@ rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/lib/py
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__builder.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__struct.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__type_support.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: rosidl_adapter/velodyne_msgs/msg/VelodynePacket.idl
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: rosidl_adapter/velodyne_msgs/msg/VelodyneScan.idl
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -124,6 +131,9 @@ rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp: rosid
 rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp
 
+rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp
+
 rosidl_generator_cpp/velodyne_msgs/msg/velodyne_scan.hpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/velodyne_msgs/msg/velodyne_scan.hpp
 
@@ -136,15 +146,20 @@ rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp: rosidl_
 rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp
 
+rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp
+
 velodyne_msgs__cpp: CMakeFiles/velodyne_msgs__cpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp
+velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/velodyne_scan.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp
 velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp
+velodyne_msgs__cpp: rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp
 velodyne_msgs__cpp: CMakeFiles/velodyne_msgs__cpp.dir/build.make
 
 .PHONY : velodyne_msgs__cpp

@@ -1,0 +1,17 @@
+[ 16%] Built target gtest
+[ 33%] Built target gtest_main
+[ 41%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_input.dir/input.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libvelodyne_input.so[0m
+[ 50%] Built target velodyne_input
+[35m[1mScanning dependencies of target time_test[0m
+[35m[1mScanning dependencies of target velodyne_driver[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable time_test[0m
+[ 75%] Built target time_test
+[ 83%] [32m[1mLinking CXX shared library libvelodyne_driver.so[0m
+[ 83%] Built target velodyne_driver
+[35m[1mScanning dependencies of target velodyne_driver_node[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/velodyne_driver_node.dir/src/driver/velodyne_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable velodyne_driver_node[0m
+[100%] Built target velodyne_driver_node

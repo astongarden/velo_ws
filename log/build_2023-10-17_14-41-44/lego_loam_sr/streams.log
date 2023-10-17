@@ -1,0 +1,108 @@
+[0.087s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr': CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_pointcloud:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(velodyne) LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/usr/local/cuda/lib64:/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/lib PYTHONPATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib/python3.8/site-packages:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib/python3.8/site-packages:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_pointcloud/lib/python3.8/site-packages:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr -- -j20 -l20
+[0.103s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.120s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.209s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.227s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.229s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.294s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.319s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.320s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.397s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.458s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.497s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[0.502s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.675s] -- Found tf2_geometry_msgs: 0.13.14 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[0.678s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.692s] -- Found pcl_conversions: 2.2.1 (/opt/ros/foxy/share/pcl_conversions/cmake)
+[0.783s] -- Found cloud_msgs: 1.0.0 (/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/share/cloud_msgs/cmake)
+[0.808s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[0.853s] -- The imported target "vtkParseOGLExt" references the file
+[0.853s]    "/usr/bin/vtkParseOGLExt-7.1"
+[0.853s] but this file does not exist.  Possible reasons include:
+[0.853s] * The file was deleted, renamed, or moved to another location.
+[0.853s] * An install or uninstall procedure did not complete successfully.
+[0.853s] * The installation package was faulty and contained
+[0.853s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.853s] but not all the files it references.
+[0.853s] 
+[0.853s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0.853s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0.853s] but this file does not exist.  Possible reasons include:
+[0.853s] * The file was deleted, renamed, or moved to another location.
+[0.853s] * An install or uninstall procedure did not complete successfully.
+[0.853s] * The installation package was faulty and contained
+[0.853s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.853s] but not all the files it references.
+[0.853s] 
+[0.853s] -- The imported target "vtk" references the file
+[0.854s]    "/usr/bin/vtk"
+[0.854s] but this file does not exist.  Possible reasons include:
+[0.854s] * The file was deleted, renamed, or moved to another location.
+[0.854s] * An install or uninstall procedure did not complete successfully.
+[0.854s] * The installation package was faulty and contained
+[0.854s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.854s] but not all the files it references.
+[0.854s] 
+[0.854s] -- The imported target "pvtk" references the file
+[0.854s]    "/usr/bin/pvtk"
+[0.854s] but this file does not exist.  Possible reasons include:
+[0.854s] * The file was deleted, renamed, or moved to another location.
+[0.854s] * An install or uninstall procedure did not complete successfully.
+[0.854s] * The installation package was faulty and contained
+[0.854s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[0.854s] but not all the files it references.
+[0.854s] 
+[0.865s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[0.868s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[0.868s] ** WARNING ** io features related to pcap will be disabled
+[0.868s] ** WARNING ** io features related to png will be disabled
+[0.875s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[0.878s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[0.882s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[0.889s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
+[0.893s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[0.899s] -- looking for PCL_COMMON
+[0.899s] -- looking for PCL_KDTREE
+[0.900s] -- looking for PCL_OCTREE
+[0.900s] -- looking for PCL_SEARCH
+[0.900s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.901s] -- looking for PCL_FILTERS
+[0.901s] -- looking for PCL_2D
+[0.901s] -- looking for PCL_GEOMETRY
+[0.901s] -- looking for PCL_IO
+[0.902s] -- looking for PCL_FEATURES
+[0.902s] -- looking for PCL_ML
+[0.902s] -- looking for PCL_SEGMENTATION
+[0.903s] -- looking for PCL_VISUALIZATION
+[0.903s] -- looking for PCL_SURFACE
+[0.904s] -- looking for PCL_REGISTRATION
+[0.904s] -- looking for PCL_KEYPOINTS
+[0.904s] -- looking for PCL_TRACKING
+[0.905s] -- looking for PCL_RECOGNITION
+[0.905s] -- looking for PCL_STEREO
+[0.905s] -- looking for PCL_APPS
+[0.906s] -- looking for PCL_IN_HAND_SCANNER
+[0.906s] -- looking for PCL_POINT_CLOUD_EDITOR
+[0.906s] -- looking for PCL_OUTOFCORE
+[0.907s] -- looking for PCL_PEOPLE
+[0.913s] CMake Error at CMakeLists.txt:28 (find_package):
+[0.913s]   By not providing "FindGTSAM.cmake" in CMAKE_MODULE_PATH this project has
+[0.913s]   asked CMake to find a package configuration file provided by "GTSAM", but
+[0.913s]   CMake did not find one.
+[0.913s] 
+[0.913s]   Could not find a package configuration file provided by "GTSAM" with any of
+[0.913s]   the following names:
+[0.913s] 
+[0.913s]     GTSAMConfig.cmake
+[0.913s]     gtsam-config.cmake
+[0.913s] 
+[0.913s]   Add the installation prefix of "GTSAM" to CMAKE_PREFIX_PATH or set
+[0.913s]   "GTSAM_DIR" to a directory containing one of the above files.  If "GTSAM"
+[0.913s]   provides a separate development package or SDK, be sure it has been
+[0.913s]   installed.
+[0.913s] 
+[0.913s] 
+[0.914s] -- Configuring incomplete, errors occurred!
+[0.914s] See also "/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr/CMakeFiles/CMakeOutput.log".
+[0.914s] See also "/home/jeongil/ros_foxy_ws/velodyne_ws/build/lego_loam_sr/CMakeFiles/CMakeError.log".
+[0.920s] make: *** [Makefile:386: cmake_check_build_system] 오류 1

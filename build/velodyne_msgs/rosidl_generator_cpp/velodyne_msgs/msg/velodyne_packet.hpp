@@ -7,5 +7,6 @@
 #include "velodyne_msgs/msg/detail/velodyne_packet__struct.hpp"
 #include "velodyne_msgs/msg/detail/velodyne_packet__builder.hpp"
 #include "velodyne_msgs/msg/detail/velodyne_packet__traits.hpp"
+#include "velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp"
 
 #endif  // VELODYNE_MSGS__MSG__VELODYNE_PACKET_HPP_

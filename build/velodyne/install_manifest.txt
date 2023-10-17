@@ -1,7 +1,7 @@
-/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-composed-launch.py
-/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-launch.py
-/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-launch.py
 /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-composed-launch.py
+/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-composed-launch.py
+/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP16-launch.py
+/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/launch/velodyne-all-nodes-VLP32C-launch.py
 /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/ament_index/resource_index/package_run_dependencies/velodyne
 /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/ament_index/resource_index/parent_prefix_path/velodyne
 /home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne/share/velodyne/environment/ament_prefix_path.sh

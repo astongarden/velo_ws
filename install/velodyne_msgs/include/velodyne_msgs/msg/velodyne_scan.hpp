@@ -7,5 +7,6 @@
 #include "velodyne_msgs/msg/detail/velodyne_scan__struct.hpp"
 #include "velodyne_msgs/msg/detail/velodyne_scan__builder.hpp"
 #include "velodyne_msgs/msg/detail/velodyne_scan__traits.hpp"
+#include "velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp"
 
 #endif  // VELODYNE_MSGS__MSG__VELODYNE_SCAN_HPP_

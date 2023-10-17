@@ -1,0 +1,20 @@
+[0.269s] Invoking command in '/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan:/home/jeongil/ros_foxy_ws/velodyne_ws/install/lego_loam_sr:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_pointcloud:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(velodyne) LD_LIBRARY_PATH=/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/usr/local/cuda/lib64:/lib64:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_pointcloud/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_driver/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_laserscan/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/cloud_msgs/lib:/home/jeongil/ros_foxy_ws/blickfeld_ws/install/blickfeld_driver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/lib /usr/bin/cmake --build /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud -- -j20 -l20
+[0.305s] [ 11%] Built target gtest
+[0.306s] [ 22%] Built target gtest_main
+[0.313s] [ 27%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_rawdata.dir/calibration.cpp.o[0m
+[0.317s] [ 44%] Built target velodyne_cloud_types
+[0.327s] [ 55%] Built target test_row_step
+[1.300s] [ 61%] [32m[1mLinking CXX shared library libvelodyne_rawdata.so[0m
+[1.373s] [ 66%] Built target velodyne_rawdata
+[1.379s] [35m[1mScanning dependencies of target test_calibration[0m
+[1.381s] [35m[1mScanning dependencies of target transform[0m
+[1.385s] [ 72%] [32mBuilding CXX object tests/CMakeFiles/test_calibration.dir/test_calibration.cpp.o[0m
+[1.400s] [ 77%] [32mBuilding CXX object CMakeFiles/transform.dir/src/conversions/transform.cpp.o[0m
+[1.788s] [ 83%] [32m[1mLinking CXX executable test_calibration[0m
+[1.889s] [ 83%] Built target test_calibration
+[5.761s] [ 88%] [32m[1mLinking CXX shared library libtransform.so[0m
+[5.978s] [ 88%] Built target transform
+[5.985s] [35m[1mScanning dependencies of target velodyne_transform_node[0m
+[6.004s] [ 94%] [32mBuilding CXX object CMakeFiles/velodyne_transform_node.dir/src/conversions/transform_node.cpp.o[0m
+[7.852s] [100%] [32m[1mLinking CXX executable velodyne_transform_node[0m
+[7.976s] [100%] Built target velodyne_transform_node

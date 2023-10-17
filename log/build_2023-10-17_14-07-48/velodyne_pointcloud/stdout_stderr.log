@@ -1,0 +1,57 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+-- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- looking for PCL_COMMON
+-- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found velodyne_msgs: 2.3.0 (/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_pointcloud
+[35m[1mScanning dependencies of target velodyne_rawdata[0m
+[35m[1mScanning dependencies of target velodyne_cloud_types[0m
+[ 22%] Built target gtest
+[ 22%] Built target gtest_main
+[35m[1mScanning dependencies of target test_row_step[0m
+[ 33%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_rawdata.dir/rawdata.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_rawdata.dir/calibration.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_cloud_types.dir/pointcloudXYZIRT.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/lib/CMakeFiles/velodyne_cloud_types.dir/organized_cloudXYZIRT.cpp.o[0m
+[01m[K/home/jeongil/ros_foxy_ws/velodyne_ws/src/velodyne-ros2/velodyne_pointcloud/src/lib/calibration.cpp:33:10:[m[K [01;31m[Kfatal error: [m[Kyaml-cpp/yaml.h: 그런 파일이나 디렉터리가 없습니다
+   33 | #include [01;31m[K<yaml-cpp/yaml.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/lib/CMakeFiles/velodyne_rawdata.dir/build.make:76: src/lib/CMakeFiles/velodyne_rawdata.dir/calibration.cpp.o] 오류 1
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+[ 50%] [32mBuilding CXX object tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o[0m
+make[1]: *** [CMakeFiles/Makefile2:284: src/lib/CMakeFiles/velodyne_rawdata.dir/all] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+[ 55%] [32m[1mLinking CXX shared library libvelodyne_cloud_types.so[0m
+[ 55%] Built target velodyne_cloud_types
+[ 61%] [32m[1mLinking CXX executable test_row_step[0m
+[ 61%] Built target test_row_step
+make: *** [Makefile:141: all] 오류 2

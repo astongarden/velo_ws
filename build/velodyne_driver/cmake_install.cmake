@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so"
-         OLD_RPATH "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver/src/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver/src/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvelodyne_driver.so")
@@ -72,7 +72,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node"
-         OLD_RPATH "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver/src/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver:/opt/ros/foxy/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/home/jeongil/ros_foxy_ws/velodyne_ws/build/velodyne_driver/src/lib:/home/jeongil/ros_foxy_ws/velodyne_ws/install/velodyne_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver/velodyne_driver_node")

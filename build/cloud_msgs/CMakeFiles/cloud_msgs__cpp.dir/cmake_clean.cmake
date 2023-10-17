@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__builder.hpp"
   "rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__struct.hpp"
   "rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__traits.hpp"
+  "rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__type_support.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

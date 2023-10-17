@@ -8,6 +8,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__builder.hpp" "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/cloud_info.hpp"
   "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__struct.hpp" "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/cloud_info.hpp"
   "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__traits.hpp" "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/cloud_info.hpp"
+  "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/detail/cloud_info__type_support.hpp" "/home/jeongil/ros_foxy_ws/velodyne_ws/build/cloud_msgs/rosidl_generator_cpp/cloud_msgs/msg/cloud_info.hpp"
   )
 
 

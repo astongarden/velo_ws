@@ -3,9 +3,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__builder.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__struct.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__traits.hpp"
+  "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_packet__type_support.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__builder.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__struct.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__traits.hpp"
+  "rosidl_generator_cpp/velodyne_msgs/msg/detail/velodyne_scan__type_support.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/velodyne_packet.hpp"
   "rosidl_generator_cpp/velodyne_msgs/msg/velodyne_scan.hpp"
 )

@@ -152,7 +152,7 @@ libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_typ
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librcpputils.so
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/librcutils.so
-libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.3
+libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfastrtps.so.2.1.4
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/foxy/lib/libfoonathan_memory-0.7.1.a
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 libcloud_msgs__rosidl_typesupport_fastrtps_c.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
